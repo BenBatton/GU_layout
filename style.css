@@ -32,11 +32,13 @@ a {
     color: rgba(34, 34, 34, 1);
     letter-spacing: 0.03em;
     line-height: 32px;
+    text-transform: uppercase;
 }
 
 .header__left_logoTextStyleD {
     font-weight: 900;
     color: rgba(241, 109, 127, 1);
+    text-transform: uppercase;
 }
 
 .header__left,
@@ -157,6 +159,7 @@ a {
     padding-left: 12px;
 }
 
+
 .promo__h1 {
     font-size: 60px;
     font-weight: 900;
@@ -172,6 +175,10 @@ a {
     color: #222222;
     letter-spacing: 0.03em;
     line-height: 33px;
+}
+
+.promo__content_textStyleRed{
+    color: rgba(241, 109, 127, 1);
 }
 
 .categories {
