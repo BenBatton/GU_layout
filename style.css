@@ -1,0 +1,734 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+.center {
+    padding: 0 calc(50% - 570px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    box-shadow: 0px 0px 10px 0px #ececec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left_logoTextStyleD,
+.header__left_logoText {
+    font-size: 27px;
+    font-weight: 300;
+    color: rgba(34, 34, 34, 1);
+    letter-spacing: 0.03em;
+    line-height: 32px;
+}
+
+.header__left_logoTextStyleD {
+    font-weight: 900;
+    color: rgba(241, 109, 127, 1);
+}
+
+.header__left,
+.header__right,
+.header__form {
+    display: flex;
+    align-items: center;
+}
+
+.header__left_browse {
+    height: 38px;
+    width: 87px;
+}
+
+.header__left_browseText {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(34, 34, 34, 1);
+    text-align: left;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    padding-right: 10px;
+}
+
+
+.header__left_browse i {
+    border: solid rgba(34, 34, 34, 1);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.header__right i {
+    border: solid rgba(255, 255, 255, 1);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+
+.header__right .arrow__down,
+.header__form .arrow__down {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.header__left_search {
+    height: 38px;
+    width: 317px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(230, 230, 230, 1);
+    border-radius: 0px 3px 3px 0px;
+}
+
+.header__left_imgBoxBtn {
+    width: 38px;
+    height: 38px;
+}
+
+.header__cart {
+    margin-right: 26px;
+}
+
+.header__right_Btn_block {
+    height: 38px;
+    width: 130px;
+    background-color: rgba(241, 109, 127, 1);
+}
+
+.header__right_BtnText {
+    padding-left: 15px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    padding-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 37px;
+}
+
+.logo__img {
+    margin-right: 13px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__link {
+    padding: 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(34, 34, 34, 1);
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.promo {
+    height: 614px;
+    background-color: #e8e8e8;
+    background-image: url(img/promo-back.png);
+    background-position: center -51px;
+    background-repeat: no-repeat;
+}
+
+.promo__content {
+    margin-top: 224px;
+    float: left;
+    border-left: 12px solid #f16d7f;
+    padding-left: 12px;
+}
+
+.promo__h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #222222;
+    letter-spacing: 0.03em;
+    line-height: 45px;
+    margin-bottom: 12px;
+}
+
+.promo__h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #222222;
+    letter-spacing: 0.03em;
+    line-height: 33px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 98px;
+}
+
+.cat__forMen {
+    height: 542px;
+    width: 560px;
+    background-image: url(img/cat_forMen_back.png);
+}
+
+.cat__accesories {
+    height: 261px;
+    width: 560px;
+    background-image: url(img/cat_accesories_back.png);
+}
+
+.cat__women {
+    height: 261px;
+    width: 560px;
+    background-image: url(img/cat_women_back.png);
+}
+
+.cat__forKids {
+    height: 542px;
+    width: 560px;
+    background-image: url(img/cat_forKids_back.png);
+}
+
+.cat__name {
+    margin-top: 26px;
+    display: inline-block;
+    padding: 16px 18px 16px 18px;
+    background-color: #fff;
+}
+
+.cat__h2 {
+    font-size: 18px;
+    font-weight: 900;
+    color: rgba(34, 34, 34, 1);
+    letter-spacing: 0.03em;
+}
+
+.cat__h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(241, 109, 127, 1);
+    letter-spacing: 0.03em;
+}
+
+.cat__padding {
+    margin-bottom: 20px;
+}
+
+.sectionContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sectionContent .item {
+    margin-bottom: 46px;
+}
+
+.feturedItems .sectionName_h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(34, 34, 34, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 54px;
+    padding-top: 46px;
+}
+
+.feturedItems .sectionName_h4 {
+    font-size: 14px;
+    color: rgba(159, 159, 159, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 14px;
+    padding-bottom: 46px;
+}
+
+.specification .item_name {
+    font-size: 13px;
+    color: rgba(34, 34, 34, 1);
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.specification .item_price {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(241, 109, 127, 1);
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.sectionContent li {
+    list-style-type: none;
+}
+
+.sectionContent .specification {
+    padding: 14px 19px;
+}
+
+.imgBox {
+    background-color: #000000;
+}
+
+.pic1 {
+    width: 261px;
+    height: 280px;
+    background-image: url(img/feturedItems/mango_t-shirt_1.png);
+}
+
+.pic2 {
+    width: 261px;
+    height: 280px;
+    background-image: url(img/feturedItems/mango_t-shirt_2.png);
+}
+
+.pic3 {
+    width: 261px;
+    height: 280px;
+    background-image: url(img/feturedItems/mango_t-shirt_3.png);
+}
+
+.pic4 {
+    width: 261px;
+    height: 280px;
+    background-image: url(img/feturedItems/mango_t-shirt_4.png);
+}
+
+.pic5 {
+    width: 261px;
+    height: 280px;
+    background-image: url(img/feturedItems/mango_t-shirt_5.png);
+}
+
+.pic6 {
+    width: 261px;
+    height: 280px;
+    background-image: url(img/feturedItems/mango_t-shirt_6.png);
+}
+
+.pic7 {
+    width: 261px;
+    height: 280px;
+    background-image: url(img/feturedItems/mango_t-shirt_7.png);
+}
+
+.pic8 {
+    width: 261px;
+    height: 280px;
+    background-image: url(img/feturedItems/mango_t-shirt_8.png);
+}
+
+.pic1:hover,
+.pic2:hover,
+.pic3:hover,
+.pic4:hover,
+.pic5:hover,
+.pic6:hover,
+.pic7:hover,
+.pic8:hover {
+    opacity: 0.5;
+}
+
+.imgBox:hover+.specification {
+    box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+}
+
+.feturedItems .allProduct__Btn {
+    height: 48px;
+    width: 212px;
+    background-color: darksalmon;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 14px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.allProduct__Btn i {
+    border: solid rgba(255, 255, 255, 1);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+
+.allProduct__Btn .arrow__right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.discount {
+    padding-top: 113px;
+    padding-bottom: 97px;
+    display: flex;
+    justify-content: space-between;
+    height: 529px;
+
+}
+
+.discount__Left {
+    width: 767px;
+    background-image: url(img/discount.png);
+}
+
+.discount__Right {
+    width: 373px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.discount__h1 {
+    padding-top: 146px;
+    padding-left: 39px;
+    font-size: 54px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.03em;
+}
+
+.discount__h1 .colorRed {
+    font-size: 54px;
+    font-weight: bold;
+    color: rgba(241, 109, 127, 1);
+    letter-spacing: 0.03em;
+}
+
+.discount__h2 {
+    padding-left: 39px;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.03em;
+
+}
+
+.discount__Right {
+    width: 373px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.discount__Right .block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.discount__Right .description {
+    width: 236px;
+}
+
+.delivery_pic {
+    width: 45px;
+    height: 35px;
+    background-image: url(img/car.png);
+    background-repeat: no-repeat;
+}
+
+.sales_pic {
+    width: 40px;
+    height: 40px;
+    background-image: url(img/percent.png);
+    background-repeat: no-repeat;
+}
+
+.quality_pic {
+    width: 47px;
+    height: 35px;
+    background-image: url(img/crown.png);
+    background-repeat: no-repeat;
+}
+
+
+.description_h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(251, 251, 251, 1);
+    letter-spacing: 0.03em;
+}
+
+.description_h4 {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(251, 251, 251, 1);
+    letter-spacing: 0.03em;
+    line-height: 24px;
+}
+
+.subscribe {
+    height: 438px;
+    background-image: url(img/subscribe_back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe__content {
+    width: 1048px;
+    height: 171px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe__comment {
+    display: flex;
+    justify-content: space-between;
+    width: 536px;
+}
+
+.subscribe_photo {
+    width: 83px;
+    height: 83px;
+    background-image: url(img/comment_photo.png);
+}
+
+.comment_block {
+    display: flex;
+    flex-direction: column;
+    width: 425px;
+}
+
+.comment__btn__block {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.comment__btn__previous {
+    height: 4px;
+    width: 38px;
+    background-color: rgba(214, 214, 214, 1);
+}
+
+.comment__btn__current {
+    height: 4px;
+    width: 38px;
+    background-color: rgba(241, 109, 127, 1)
+}
+
+.comment__btn__next {
+    height: 4px;
+    width: 38px;
+    background-color: rgba(214, 214, 214, 1);
+}
+
+.comment_text_h4 {
+    font-size: 16px;
+    font-style: italic;
+    color: rgba(34, 34, 36, 1);
+    letter-spacing: 0.03em;
+    line-height: 26px;
+}
+
+.text_author {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(241, 109, 127, 1);
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    padding-top: 15px;
+}
+
+.comment_author_address {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(34, 34, 36, 1);
+    letter-spacing: 0.03em;
+    line-height: 14px;
+}
+
+.subscribe_email_form {
+    width: 386px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.form__send {
+    display: flex;
+}
+
+.form_name {
+    font-size: 24px;
+    color: rgba(34, 34, 36, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.form_description {
+    font-size: 14px;
+    color: rgba(34, 34, 36, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    padding-bottom: 30px;
+}
+
+.email__form {
+    border-radius: 23px;
+    -webkit-border-radius: 23px 0px 0px 23px;
+    -moz-border-radius: 23px;
+    -khtml-border-radius: 23px;
+    background: #ffffff !important;
+    background-color: rgba(225, 225, 225, 1);
+    outline: none;
+    height: 46px;
+    width: 282px;
+    color: #cccccc;
+    font-size: 14px;
+    color: rgba(34, 34, 36, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 54px;
+}
+
+.send__email__button {
+    height: 46px;
+    width: 104px;
+    background-color: rgba(241, 109, 127, 1);
+    border-radius: 0px 23px 23px 0px;
+}
+
+.btn_send_style {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 44px;
+}
+
+.lowerMenu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 109px;
+}
+
+.lowerMenu__brand_block {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lowerMenu__brand_logo {
+    display: flex;
+}
+
+.lowerMenu__brand_name {
+    font-family: 'Lato';
+    font-size: 27px;
+    font-weight: 300;
+    color: rgba(62, 62, 64, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+}
+
+.letter_D_style {
+    color: rgba(241, 109, 127, 1);
+    font-weight: 900;
+}
+
+.lowerMenu__brand_text {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(137, 137, 137, 1);
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    text-align: start;
+    padding-top: 29px;
+}
+
+.lowerMenu__menu_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.lowerMenu__name {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(241, 109, 127, 1);
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: start;
+}
+
+.lowerMenu__list {
+    list-style-type: none;
+    padding-top: 45px;
+    font-size: 16px;
+    color: rgba(137, 137, 137, 1);
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 42px;
+    text-align: start;
+}
+
+.footer {
+    height: 79px;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 97px;
+}
+
+.footer__copyright {
+    font-size: 16px;
+    color: rgba(122, 122, 122, 1);
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 42px;
+}
+
+.footer__socialBlock {
+    width: 191px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__socialBlock_imgBox_active,
+.footer__socialBlock_imgBox {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__socialBlock .footer__socialBlock_imgBox_active {
+    background-color: red;
+}
