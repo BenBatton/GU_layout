@@ -1,0 +1,121 @@
+.catalog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftMenu {
+    width: 243px;
+    height: 800px;
+    display: block;
+    background-color: blue;
+}
+
+.content {
+    width: 845px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkBox {
+    height: 177px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.elements {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pagination {
+    height: 44px;
+    width: 845px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .pagination__block {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #000;
+    
+} */
+
+.viewAll_btn {
+    width: 150px;
+    background-color: gray;
+}
+
+
+.sortA__box {
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trending_block {
+    margin-top: 12px;
+    width: 177px;
+    background-color: black;
+}
+
+.size_block {
+    margin-top: 12px;
+    width: 236px;
+    background-color: black;
+}
+
+.price_block {
+    margin-top: 12px;
+    width: 263px;
+    background-color: black;
+}
+
+
+.sortB__box {
+    height: 50px;
+    display: flex;
+    background-color: green;
+}
+
+.sortByName_block {
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 30px;
+    width: 153px;
+    background-color: black;
+}
+
+.showNumItems_block {
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 30px;
+    width: 119px;
+    background-color: black;
+}
+
+.pagination-flickr {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px rgba(235, 235, 235, 1);
+    border-radius: 3px;
+}
+
+.pagination-flickr li{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(196, 196, 196, 1);
+    line-height: 26px;
+    list-style-type: none;
+}
+.pagination-flickr li .active{
+    color: rgba(239, 91, 112, 1);
+}
