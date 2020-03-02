@@ -8,11 +8,12 @@
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="permanent_block.css" />
+    <link rel="stylesheet" href="product_item.css" />
   </head>
-
   <body>
-    <div class="header center">
+    <header class="header center">
       <div class="header__left">
         <a href="" class="logo"
           ><img class="logo__img" src="img/logo.png" alt="logo" /><span
@@ -44,8 +45,8 @@
           ></a>
         </div>
       </div>
-    </div>
-    <div class="nav">
+    </header>
+    <nav class="upperMenu">
       <ul class="menu center">
         <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
         <li class="menu__list"><a href="#" class="menu__link">Man</a></li>
@@ -57,11 +58,13 @@
         <li class="menu__list"><a href="#" class="menu__link">Featured</a></li>
         <li class="menu__list"><a href="#" class="menu__link">Hot Deals</a></li>
       </ul>
-    </div>
+    </nav>
     <div class="promo center">
       <div class="promo__content">
         <h1 class="promo__h1">THE BRAND</h1>
-        <h2 class="promo__h2">OF LUXERIOUS <span class="promo__content_textStyleRed">FASHION</span></h2>
+        <h2 class="promo__h2">
+          OF LUXERIOUS <span class="promo__content_textStyleRed">FASHION</span>
+        </h2>
       </div>
     </div>
     <div class="categories center">
@@ -94,7 +97,7 @@
         </div>
       </div>
     </div>
-    <div class="feturedItems center">
+    <section class="feturedItems center">
       <div class="sectionName">
         <div class="sectionName_h1">Fetured Items</div>
         <div class="sectionName_h4">
@@ -102,83 +105,115 @@
         </div>
       </div>
       <div class="sectionContent">
-        <li>
-          <div class="item">
-            <div class="imgBox"><div class="pic1"></div></div>
-            <div class="specification">
-              <h1 class="item_name">Mango People T-shirt</h1>
-              <h4 class="item_price">$52.00</h4>
-            </div>
+        <div class="product">
+          <a href="#"
+            ><img
+              class="product__img"
+              src="img/feturedItems/mango_t-shirt_1.png"
+              alt="Photo product"
+          /></a>
+          <div class="product__content">
+            <a href="#" class="product__name">Mango People T-shirt</a>
+            <p class="product__price">$52.00</p>
           </div>
-        </li>
-        <li>
-          <div class="item">
-            <div class="imgBox"><div class="pic2"></div></div>
-            <div class="specification">
-              <h1 class="item_name">Mango People T-shirt</h1>
-              <h4 class="item_price">$52.00</h4>
-            </div>
+          <a href="#" class="product__add">Add to Cart</a>
+        </div>
+        <div class="product">
+          <a href="#"
+            ><img
+              class="product__img"
+              src="img/feturedItems/mango_t-shirt_2.png"
+              alt="Photo product"
+          /></a>
+          <div class="product__content">
+            <a href="#" class="product__name">Mango People T-shirt</a>
+            <p class="product__price">$52.00</p>
           </div>
-        </li>
-        <li>
-          <div class="item">
-            <div class="imgBox"><div class="pic3"></div></div>
-            <div class="specification">
-              <h1 class="item_name">Mango People T-shirt</h1>
-              <h4 class="item_price">$52.00</h4>
-            </div>
+          <a href="#" class="product__add">Add to Cart</a>
+        </div>
+        <div class="product">
+          <a href="#"
+            ><img
+              class="product__img"
+              src="img/feturedItems/mango_t-shirt_3.png"
+              alt="Photo product"
+          /></a>
+          <div class="product__content">
+            <a href="#" class="product__name">Mango People T-shirt</a>
+            <p class="product__price">$52.00</p>
           </div>
-        </li>
-        <li>
-          <div class="item">
-            <div class="imgBox"><div class="pic4"></div></div>
-            <div class="specification">
-              <h1 class="item_name">Mango People T-shirt</h1>
-              <h4 class="item_price">$52.00</h4>
-            </div>
+          <a href="#" class="product__add">Add to Cart</a>
+        </div>
+        <div class="product">
+          <a href="#"
+            ><img
+              class="product__img"
+              src="img/feturedItems/mango_t-shirt_4.png"
+              alt="Photo product"
+          /></a>
+          <div class="product__content">
+            <a href="#" class="product__name">Mango People T-shirt</a>
+            <p class="product__price">$52.00</p>
           </div>
-        </li>
-        <li>
-          <div class="item">
-            <div class="imgBox"><div class="pic5"></div></div>
-            <div class="specification">
-              <h1 class="item_name">Mango People T-shirt</h1>
-              <h4 class="item_price">$52.00</h4>
-            </div>
+          <a href="#" class="product__add">Add to Cart</a>
+        </div>
+        <div class="product">
+          <a href="#"
+            ><img
+              class="product__img"
+              src="img/feturedItems/mango_t-shirt_5.png"
+              alt="Photo product"
+          /></a>
+          <div class="product__content">
+            <a href="#" class="product__name">Mango People T-shirt</a>
+            <p class="product__price">$52.00</p>
           </div>
-        </li>
-        <li>
-          <div class="item">
-            <div class="imgBox"><div class="pic6"></div></div>
-            <div class="specification">
-              <h1 class="item_name">Mango People T-shirt</h1>
-              <h4 class="item_price">$52.00</h4>
-            </div>
+          <a href="#" class="product__add">Add to Cart</a>
+        </div>
+        <div class="product">
+          <a href="#"
+            ><img
+              class="product__img"
+              src="img/feturedItems/mango_t-shirt_6.png"
+              alt="Photo product"
+          /></a>
+          <div class="product__content">
+            <a href="#" class="product__name">Mango People T-shirt</a>
+            <p class="product__price">$52.00</p>
           </div>
-        </li>
-        <li>
-          <div class="item">
-            <div class="imgBox"><div class="pic7"></div></div>
-            <div class="specification">
-              <h1 class="item_name">Mango People T-shirt</h1>
-              <h4 class="item_price">$52.00</h4>
-            </div>
+          <a href="#" class="product__add">Add to Cart</a>
+        </div>
+        <div class="product">
+          <a href="#"
+            ><img
+              class="product__img"
+              src="img/feturedItems/mango_t-shirt_7.png"
+              alt="Photo product"
+          /></a>
+          <div class="product__content">
+            <a href="#" class="product__name">Mango People T-shirt</a>
+            <p class="product__price">$52.00</p>
           </div>
-        </li>
-        <li>
-          <div class="item">
-            <div class="imgBox"><div class="pic8"></div></div>
-            <div class="specification">
-              <h1 class="item_name">Mango People T-shirt</h1>
-              <h4 class="item_price">$52.00</h4>
-            </div>
+          <a href="#" class="product__add">Add to Cart</a>
+        </div>
+        <div class="product">
+          <a href="#"
+            ><img
+              class="product__img"
+              src="img/feturedItems/mango_t-shirt_8.png"
+              alt="Photo product"
+          /></a>
+          <div class="product__content">
+            <a href="#" class="product__name">Mango People T-shirt</a>
+            <p class="product__price">$52.00</p>
           </div>
-        </li>
+          <a href="#" class="product__add">Add to Cart</a>
+        </div>
       </div>
       <button class="allProduct__Btn center">
         Browse All Product <i class="arrow__right"></i>
       </button>
-    </div>
+    </section>
     <div class="discount center">
       <div class="discount__Left">
         <h1 class="discount__h1">30% <span class="colorRed">OFFER</span></h1>
@@ -259,7 +294,7 @@
         </div>
       </div>
     </div>
-    <div class="lowerMenu center">
+    <nav class="lowerMenu center">
       <div class="lowerMenu__brand_block">
         <div class="lowerMenu__brand_logo">
           <img src="img/logo.png" alt="" class="lowerMenu__brand_img" />
@@ -308,8 +343,8 @@
           <li>Brows All</li>
         </div>
       </div>
-    </div>
-    <div class="footer center">
+    </nav>
+    <footer class="footer center">
       <h3 class="footer__copyright">© 2017 Brand All Rights Reserved.</h3>
       <div class="footer__socialBlock">
         <div class="footer__socialBlock_imgBox">
@@ -328,6 +363,6 @@
           <a href=""><img src="img/g.png" alt=""/></a>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
