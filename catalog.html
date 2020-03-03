@@ -48,52 +48,244 @@
     </header>
     <nav class="upperMenu">
       <ul class="menu center">
-        <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
-        <li class="menu__list"><a href="#" class="menu__link">Man</a></li>
-        <li class="menu__list"><a href="#" class="menu__link">Women</a></li>
-        <li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
-        <li class="menu__list">
-          <a href="#" class="menu__link">Accoseriese</a>
-        </li>
-        <li class="menu__list"><a href="#" class="menu__link">Featured</a></li>
-        <li class="menu__list"><a href="#" class="menu__link">Hot Deals</a></li>
+        <li class="menu__list"><a href="#">Home</a></li>
+        <li class="menu__list"><a href="#" class="active">Man</a></li>
+        <li class="menu__list"><a href="#">Women</a></li>
+        <li class="menu__list"><a href="#">Kids</a></li>
+        <li class="menu__list"><a href="#">Accoseriese</a></li>
+        <li class="menu__list"><a href="#">Featured</a></li>
+        <li class="menu__list"><a href="#">Hot Deals</a></li>
       </ul>
     </nav>
     <div class="newArrivals">
       <div class="newArrivals__block center">
-        <h1 class="newArrivals_h1">new arrivals</h1>
-        <div class="h3 scrumbs_h3">
-          Home/Men/<span class="newArrivals_style">New Arrivals</span>
-        </div>
+        <h2 class="newArrivals_h2">new arrivals</h2>
+        <ul class="scrumbs_h3">
+          <li><a href="#">home/</a></li>
+          <li><a href="#">men/</a></li>
+          <li><span class="newArrivals_style">New Arrivals</span></li>
+        </ul>
       </div>
     </div>
 
     <section class="catalog center">
       <nav class="leftMenu">
-        <article class="category">category</article>
-        <article class="brand">brand</article>
-        <article class="designer">designer</article>
+        <ul>
+          <li>
+            <a href="#">category</a>
+            <ul>
+              <li><a href="#">Accoseries</a></li>
+              <li><a href="#">Bags</a></li>
+              <li><a href="#">Denim</a></li>
+              <li><a href="#">Hoodies & Sweatshirts</a></li>
+              <li><a href="#">Jackets & Coats</a></li>
+              <li><a href="#">Pants</a></li>
+              <li><a href="#">Polos</a></li>
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Shorts</a></li>
+              <li><a href="#">Sweaters & Knits</a></li>
+              <li><a href="#">T-Shirts</a></li>
+              <li><a href="#">Tanks</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">brand</a>
+            <ul>
+              <li><a href="#">Louis Vuitton</a></li>
+              <li><a href="#">Prada</a></li>
+              <li><a href="#">Chanel</a></li>
+              <li><a href="#">Christian Dior</a></li>
+              <li><a href="#">Gucci</a></li>
+              <li><a href="#">Giorgio Armani</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">designer</a>
+            <ul>
+              <li><a href="#">Пьер Карден</a></li>
+              <li><a href="#">Жан Поль Готье</a></li>
+              <li><a href="#">Кристиан Лакруа</a></li>
+              <li><a href="#">Пако Рабан</a></li>
+              <li><a href="#">Живанши</a></li>
+            </ul>
+          </li>
+        </ul>
       </nav>
       <div class="content">
         <aside class="checkBox">
-            <div class="sortA__box">
-                <div class="trending_block"></div>
-                <div class="size_block"></div>
-                <div class="price_block"></div>
+          <div class="sortA__box">
+            <div class="trending__block">
+              <p class="trending_block_name">trending now</p>
+              <ul>
+                <li><a href="#">Bohemian</a></li>
+                <li><a href="#">Lace Floral</a></li>
+                <li><a href="#">Floral</a></li>
+                <li><a href="#">Lace</a></li>
+                <li><a href="#">Bohemian</a></li>
+              </ul>
             </div>
-            <div class="sortB__box">
-                <div class="sortByName_block"></div>
-                <div class="showNumItems_block"></div>
+            <div class="size__block">
+              <p class="size__block_name">size</p>
+              <ul class="up">
+                <li>
+                  <input type="checkbox" id="XXS" />
+                  <label for="XXS">XXS</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="XS" />
+                  <label for="XS">XS</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="S" />
+                  <label for="S">S</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="M" />
+                  <label for="M">M</label>
+                </li>
+              </ul>
+              <ul class="down">
+                <li>
+                  <input type="checkbox" id="XXL" />
+                  <label for="XXL">XXL</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="XL" />
+                  <label for="XL">XL</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="L" />
+                  <label for="L">L</label>
+                </li>
+              </ul>
             </div>
-            
-
+            <div class="price__block">
+              <p class="price__block_name">
+                GOTO (реализовать не получилось. Просто рисовать картинку не
+                стал.
+              </p>
+            </div>
+          </div>
+          <div class="sortB__box">
+            <div class="sortByName__block">
+              <div class="typeBox">Sort By</div>
+              <div class="menuBox">
+                <ul>
+                  <li>
+                    <span>Name</span><i class="arrow__down"></i>
+                    <ul>
+                      <li><a href="#">John</a></li>
+                      <li><a href="#">Clare</a></li>
+                      <li><a href="#">Pit</a></li>
+                      <li><a href="#">Bill</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="showNumItems__block">
+              <div class="typeBox">Show</div>
+              <div class="menuBox">
+                <ul>
+                  <li>
+                    <span>09</span><i class="arrow__down"></i>
+                    <ul>
+                      <li><a href="#">03</a></li>
+                      <li><a href="#">06</a></li>
+                      <li><a href="#">12</a></li>
+                      <li><a href="#">15</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </aside>
         <div class="elements">
           <div class="product">
             <a href="#"
               ><img
                 class="product__img"
-                src="img/feturedItems/mango_t-shirt_8.png"
+                src="img/feturedItems/mango_t-shirt_1.png"
+                alt="Photo product"
+            /></a>
+            <div class="product__content">
+              <a href="#" class="product__name">Mango People T-shirt</a>
+              <p class="product__price">$52.00</p>
+            </div>
+            <a href="#" class="product__add">Add to Cart</a>
+          </div>
+          <div class="product">
+            <a href="#"
+              ><img
+                class="product__img"
+                src="img/feturedItems/mango_t-shirt_2.png"
+                alt="Photo product"
+            /></a>
+            <div class="product__content">
+              <a href="#" class="product__name">Mango People T-shirt</a>
+              <p class="product__price">$52.00</p>
+            </div>
+            <a href="#" class="product__add">Add to Cart</a>
+          </div>
+          <div class="product">
+            <a href="#"
+              ><img
+                class="product__img"
+                src="img/feturedItems/mango_t-shirt_3.png"
+                alt="Photo product"
+            /></a>
+            <div class="product__content">
+              <a href="#" class="product__name">Mango People T-shirt</a>
+              <p class="product__price">$52.00</p>
+            </div>
+            <a href="#" class="product__add">Add to Cart</a>
+          </div>
+          <div class="product">
+            <a href="#"
+              ><img
+                class="product__img"
+                src="img/feturedItems/mango_t-shirt_4.png"
+                alt="Photo product"
+            /></a>
+            <div class="product__content">
+              <a href="#" class="product__name">Mango People T-shirt</a>
+              <p class="product__price">$52.00</p>
+            </div>
+            <a href="#" class="product__add">Add to Cart</a>
+          </div>
+          <div class="product">
+            <a href="#"
+              ><img
+                class="product__img"
+                src="img/feturedItems/mango_t-shirt_5.png"
+                alt="Photo product"
+            /></a>
+            <div class="product__content">
+              <a href="#" class="product__name">Mango People T-shirt</a>
+              <p class="product__price">$52.00</p>
+            </div>
+            <a href="#" class="product__add">Add to Cart</a>
+          </div>
+          <div class="product">
+            <a href="#"
+              ><img
+                class="product__img"
+                src="img/feturedItems/mango_t-shirt_6.png"
+                alt="Photo product"
+            /></a>
+            <div class="product__content">
+              <a href="#" class="product__name">Mango People T-shirt</a>
+              <p class="product__price">$52.00</p>
+            </div>
+            <a href="#" class="product__add">Add to Cart</a>
+          </div>
+          <div class="product">
+            <a href="#"
+              ><img
+                class="product__img"
+                src="img/feturedItems/mango_t-shirt_7.png"
                 alt="Photo product"
             /></a>
             <div class="product__content">
@@ -119,85 +311,7 @@
             <a href="#"
               ><img
                 class="product__img"
-                src="img/feturedItems/mango_t-shirt_8.png"
-                alt="Photo product"
-            /></a>
-            <div class="product__content">
-              <a href="#" class="product__name">Mango People T-shirt</a>
-              <p class="product__price">$52.00</p>
-            </div>
-            <a href="#" class="product__add">Add to Cart</a>
-          </div>
-          <div class="product">
-            <a href="#"
-              ><img
-                class="product__img"
-                src="img/feturedItems/mango_t-shirt_8.png"
-                alt="Photo product"
-            /></a>
-            <div class="product__content">
-              <a href="#" class="product__name">Mango People T-shirt</a>
-              <p class="product__price">$52.00</p>
-            </div>
-            <a href="#" class="product__add">Add to Cart</a>
-          </div>
-          <div class="product">
-            <a href="#"
-              ><img
-                class="product__img"
-                src="img/feturedItems/mango_t-shirt_8.png"
-                alt="Photo product"
-            /></a>
-            <div class="product__content">
-              <a href="#" class="product__name">Mango People T-shirt</a>
-              <p class="product__price">$52.00</p>
-            </div>
-            <a href="#" class="product__add">Add to Cart</a>
-          </div>
-          <div class="product">
-            <a href="#"
-              ><img
-                class="product__img"
-                src="img/feturedItems/mango_t-shirt_8.png"
-                alt="Photo product"
-            /></a>
-            <div class="product__content">
-              <a href="#" class="product__name">Mango People T-shirt</a>
-              <p class="product__price">$52.00</p>
-            </div>
-            <a href="#" class="product__add">Add to Cart</a>
-          </div>
-          <div class="product">
-            <a href="#"
-              ><img
-                class="product__img"
-                src="img/feturedItems/mango_t-shirt_8.png"
-                alt="Photo product"
-            /></a>
-            <div class="product__content">
-              <a href="#" class="product__name">Mango People T-shirt</a>
-              <p class="product__price">$52.00</p>
-            </div>
-            <a href="#" class="product__add">Add to Cart</a>
-          </div>
-          <div class="product">
-            <a href="#"
-              ><img
-                class="product__img"
-                src="img/feturedItems/mango_t-shirt_8.png"
-                alt="Photo product"
-            /></a>
-            <div class="product__content">
-              <a href="#" class="product__name">Mango People T-shirt</a>
-              <p class="product__price">$52.00</p>
-            </div>
-            <a href="#" class="product__add">Add to Cart</a>
-          </div>
-          <div class="product">
-            <a href="#"
-              ><img
-                class="product__img"
-                src="img/feturedItems/mango_t-shirt_8.png"
+                src="img/feturedItems/mango_t-shirt_9.png"
                 alt="Photo product"
             /></a>
             <div class="product__content">
@@ -208,19 +322,17 @@
           </div>
         </div>
         <div class="pagination">
-          
-            <ul class="pagination-flickr">
-                <li class="previous-off">Previous</li>
-                <li class="active">1</li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li class="next"><a href="#">Next</a></li>
-            </ul>
-          
-          <button class="viewAll_btn"></button>
+          <ul class="pagination-flickr">
+            <li class="previous-off"><</li>
+            <li class="active">1</li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#" class="next">></a></li>
+          </ul>
+          <a href=""><div class="viewAll_btn">View All</div></a>
         </div>
       </div>
     </section>

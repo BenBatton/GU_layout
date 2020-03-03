@@ -66,7 +66,6 @@ a {
     padding-right: 10px;
 }
 
-
 .header__left_browse i {
     border: solid rgba(34, 34, 34, 1);
     border-width: 0 3px 3px 0;
@@ -81,7 +80,7 @@ a {
     padding: 3px;
 }
 
-
+.menuBox .arrow__down,
 .header__right .arrow__down,
 .header__form .arrow__down {
     transform: rotate(-45deg);
@@ -141,7 +140,7 @@ a {
     justify-content: center;
 }
 
-.menu__link {
+.upperMenu>ul a {
     padding: 20px;
     display: block;
     font-size: 14px;
@@ -149,6 +148,64 @@ a {
     color: rgba(34, 34, 34, 1);
     line-height: 26px;
     text-transform: uppercase;
+    
+}
+
+.upperMenu .active {
+    border-bottom: 1px solid red;
+}
+
+.upperMenu>ul a:hover {
+    border-bottom: 1px solid rgba(241, 109, 127, 1);
+}
+
+/* =================================================== */
+/* new arrivals(crumbs) */
+.newArrivals {
+    height: 148px;
+    background-color: rgba(248, 243, 244, 1);
+}
+
+.newArrivals__block {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.newArrivals_h2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: rgba(241, 109, 127, 1);
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.scrumbs_h3 {
+    display: flex;
+}
+
+.scrumbs_h3>li {
+    list-style-type: none;
+}
+
+.scrumbs_h3>li a {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(99, 99, 99, 1);
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.scrumbs_h3>li a:hover {
+    color: black;
+}
+
+.newArrivals_style {
+
+    text-transform: uppercase;
+    color: rgba(241, 109, 127, 1);
 }
 
 /* ====================================================== */

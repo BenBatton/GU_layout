@@ -14,7 +14,7 @@
 }
 
 
-.promo__h1 {
+.promo__h2 {
     font-size: 60px;
     font-weight: 900;
     color: #222222;
@@ -23,7 +23,7 @@
     margin-bottom: 12px;
 }
 
-.promo__h2 {
+.promo__h3 {
     font-size: 40px;
     font-weight: 900;
     color: #222222;
@@ -72,14 +72,14 @@
     background-color: #fff;
 }
 
-.cat__h2 {
+.cat__h3 {
     font-size: 18px;
     font-weight: 900;
     color: rgba(34, 34, 34, 1);
     letter-spacing: 0.03em;
 }
 
-.cat__h1 {
+.cat__h2 {
     font-size: 30px;
     font-weight: 900;
     color: rgba(241, 109, 127, 1);
@@ -96,7 +96,7 @@
     justify-content: space-between;
 }
 
-.feturedItems .sectionName_h1 {
+.feturedItems .sectionName_h2 {
     font-size: 30px;
     font-weight: bold;
     color: rgba(34, 34, 34, 1);
@@ -163,7 +163,7 @@
     flex-direction: column;
 }
 
-.discount__h1 {
+.discount__h2 {
     padding-top: 146px;
     padding-left: 39px;
     font-size: 54px;
@@ -172,14 +172,14 @@
     letter-spacing: 0.03em;
 }
 
-.discount__h1 .colorRed {
+.discount__h2 .colorRed {
     font-size: 54px;
     font-weight: bold;
     color: rgba(241, 109, 127, 1);
     letter-spacing: 0.03em;
 }
 
-.discount__h2 {
+.discount__h3 {
     padding-left: 39px;
     font-size: 32px;
     font-weight: bold;
