@@ -1,243 +1,237 @@
 .promo {
-    height: 614px;
-    background-color: #e8e8e8;
-    background-image: url(img/promo-back.png);
-    background-position: center -51px;
-    background-repeat: no-repeat;
+  height: 614px;
+  background-color: #e8e8e8;
+  background-image: url(img/promo-back.png);
+  background-position: center -51px;
+  background-repeat: no-repeat;
 }
 
 .promo__content {
-    margin-top: 224px;
-    float: left;
-    border-left: 12px solid #f16d7f;
-    padding-left: 12px;
+  margin-top: 224px;
+  float: left;
+  border-left: 12px solid #f16d7f;
+  padding-left: 12px;
 }
 
-
 .promo__h2 {
-    font-size: 60px;
-    font-weight: 900;
-    color: #222222;
-    letter-spacing: 0.03em;
-    line-height: 45px;
-    margin-bottom: 12px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #222222;
+  letter-spacing: 0.03em;
+  line-height: 45px;
+  margin-bottom: 12px;
 }
 
 .promo__h3 {
-    font-size: 40px;
-    font-weight: 900;
-    color: #222222;
-    letter-spacing: 0.03em;
-    line-height: 33px;
+  font-size: 40px;
+  font-weight: 900;
+  color: #222222;
+  letter-spacing: 0.03em;
+  line-height: 33px;
 }
 
 .promo__content_textStyleRed {
-    color: rgba(241, 109, 127, 1);
+  color: rgba(241, 109, 127, 1);
 }
 
 .categories {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 98px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 98px;
 }
 
 .cat__forMen {
-    height: 542px;
-    width: 560px;
-    background-image: url(img/cat_forMen_back.png);
+  height: 542px;
+  width: 560px;
+  background-image: url(img/cat_forMen_back.png);
 }
 
 .cat__accesories {
-    height: 261px;
-    width: 560px;
-    background-image: url(img/cat_accesories_back.png);
+  height: 261px;
+  width: 560px;
+  background-image: url(img/cat_accesories_back.png);
 }
 
 .cat__women {
-    height: 261px;
-    width: 560px;
-    background-image: url(img/cat_women_back.png);
+  height: 261px;
+  width: 560px;
+  background-image: url(img/cat_women_back.png);
 }
 
 .cat__forKids {
-    height: 542px;
-    width: 560px;
-    background-image: url(img/cat_forKids_back.png);
+  height: 542px;
+  width: 560px;
+  background-image: url(img/cat_forKids_back.png);
 }
 
 .cat__name {
-    margin-top: 26px;
-    display: inline-block;
-    padding: 16px 18px 16px 18px;
-    background-color: #fff;
+  margin-top: 26px;
+  display: inline-block;
+  padding: 16px 18px 16px 18px;
+  background-color: #fff;
 }
 
 .cat__h3 {
-    font-size: 18px;
-    font-weight: 900;
-    color: rgba(34, 34, 34, 1);
-    letter-spacing: 0.03em;
+  font-size: 18px;
+  font-weight: 900;
+  color: rgba(34, 34, 34, 1);
+  letter-spacing: 0.03em;
 }
 
 .cat__h2 {
-    font-size: 30px;
-    font-weight: 900;
-    color: rgba(241, 109, 127, 1);
-    letter-spacing: 0.03em;
+  font-size: 30px;
+  font-weight: 900;
+  color: rgba(241, 109, 127, 1);
+  letter-spacing: 0.03em;
 }
 
 .cat__padding {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .sectionContent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .feturedItems .sectionName_h2 {
-    font-size: 30px;
-    font-weight: bold;
-    color: rgba(34, 34, 34, 1);
-    text-align: center;
-    letter-spacing: 0.03em;
-    line-height: 54px;
-    padding-top: 46px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(34, 34, 34, 1);
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 54px;
+  padding-top: 46px;
 }
 
 .feturedItems .sectionName_h4 {
-    font-size: 14px;
-    color: rgba(159, 159, 159, 1);
-    text-align: center;
-    letter-spacing: 0.03em;
-    line-height: 14px;
-    padding-bottom: 46px;
+  font-size: 14px;
+  color: rgba(159, 159, 159, 1);
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 14px;
+  padding-bottom: 46px;
 }
 
 .feturedItems .allProduct__Btn {
-    height: 48px;
-    width: 212px;
-    background-color: darksalmon;
-    font-size: 16px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 1);
-    text-align: center;
-    letter-spacing: 0.03em;
-    line-height: 14px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
+  height: 48px;
+  width: 212px;
+  background-color: darksalmon;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 14px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .allProduct__Btn i {
-    border: solid rgba(255, 255, 255, 1);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
+  border: solid rgba(255, 255, 255, 1);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
 }
 
-
 .allProduct__Btn .arrow__right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 .discount {
-    margin-top: 113px;
-    display: flex;
-    justify-content: space-between;
-    height: 529px;
-
+  margin-top: 113px;
+  display: flex;
+  justify-content: space-between;
+  height: 529px;
 }
 
 .discount__Left {
-    width: 767px;
-    background-image: url(img/discount.png);
+  width: 767px;
+  background: url(img/discount_back_0.png), url(img/discount.png);
 }
 
 .discount__Right {
-    width: 373px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
+  width: 373px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 .discount__h2 {
-    padding-top: 146px;
-    padding-left: 39px;
-    font-size: 54px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 1);
-    letter-spacing: 0.03em;
+  padding-top: 146px;
+  padding-left: 39px;
+  font-size: 54px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.03em;
 }
 
 .discount__h2 .colorRed {
-    font-size: 54px;
-    font-weight: bold;
-    color: rgba(241, 109, 127, 1);
-    letter-spacing: 0.03em;
+  font-size: 54px;
+  font-weight: bold;
+  color: rgba(241, 109, 127, 1);
+  letter-spacing: 0.03em;
 }
 
 .discount__h3 {
-    padding-left: 39px;
-    font-size: 32px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 1);
-    letter-spacing: 0.03em;
-
+  padding-left: 39px;
+  font-size: 32px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.03em;
 }
 
 .discount__Right {
-    width: 373px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
+  width: 373px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .discount__Right .block {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .discount__Right .description {
-    width: 236px;
+  width: 236px;
 }
 
 .delivery_pic {
-    width: 45px;
-    height: 35px;
-    background-image: url(img/car.png);
-    background-repeat: no-repeat;
+  width: 45px;
+  height: 35px;
+  background-image: url(img/car.png);
+  background-repeat: no-repeat;
 }
 
 .sales_pic {
-    width: 40px;
-    height: 40px;
-    background-image: url(img/percent.png);
-    background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-image: url(img/percent.png);
+  background-repeat: no-repeat;
 }
 
 .quality_pic {
-    width: 47px;
-    height: 35px;
-    background-image: url(img/crown.png);
-    background-repeat: no-repeat;
+  width: 47px;
+  height: 35px;
+  background-image: url(img/crown.png);
+  background-repeat: no-repeat;
 }
 
-
 .description_h2 {
-    font-size: 20px;
-    font-weight: bold;
-    color: rgba(251, 251, 251, 1);
-    letter-spacing: 0.03em;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(251, 251, 251, 1);
+  letter-spacing: 0.03em;
 }
 
 .description_h4 {
-    font-size: 14px;
-    font-weight: 300;
-    color: rgba(251, 251, 251, 1);
-    letter-spacing: 0.03em;
-    line-height: 24px;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(251, 251, 251, 1);
+  letter-spacing: 0.03em;
+  line-height: 24px;
 }
