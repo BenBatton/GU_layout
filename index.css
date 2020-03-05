@@ -41,24 +41,28 @@
 }
 
 .cat__forMen {
+  display: block;
   height: 542px;
   width: 560px;
   background-image: url(img/cat_forMen_back.png);
 }
 
 .cat__accesories {
+  display: block;
   height: 261px;
   width: 560px;
   background-image: url(img/cat_accesories_back.png);
 }
 
 .cat__women {
+  display: block;
   height: 261px;
   width: 560px;
   background-image: url(img/cat_women_back.png);
 }
 
 .cat__forKids {
+  display: block;
   height: 542px;
   width: 560px;
   background-image: url(img/cat_forKids_back.png);
@@ -161,12 +165,14 @@
 }
 
 .discount__h2 {
+  display: block;
   padding-top: 146px;
   padding-left: 39px;
   font-size: 54px;
   font-weight: bold;
   color: rgba(255, 255, 255, 1);
   letter-spacing: 0.03em;
+  text-align: left;
 }
 
 .discount__h2 .colorRed {
@@ -177,7 +183,7 @@
 }
 
 .discount__h3 {
-  padding-left: 39px;
+  
   font-size: 32px;
   font-weight: bold;
   color: rgba(255, 255, 255, 1);
