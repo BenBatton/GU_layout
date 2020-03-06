@@ -64,55 +64,58 @@ a {
 }
 
 .drop__browse_menu {
-  position: absolute;
-  display: none;
-  background-color: ghostwhite;
-  z-index: 100;
-  padding: 25px;
+  position: relative;
+  height: 38px;
+  width: 85px;
+
+  border: 1px solid rgba(230, 230, 230, 1);
+
 }
+
+.drop__browse_menu[open] .drop {
+  display: flex;
+}
+
+.browse_menu_style {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(111, 110, 110, 1);
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 38px;
+}
+
+.header__right_Btn_block {
+  position: relative;
+  height: 38px;
+  width: 130px;
+  background-color: rgba(241, 109, 127, 1);
+  border-radius: 3px;
+  z-index: 1000;
+}
+
+.header__right_Btn_block[open] .basket_menu {
+  display: flex;
+}
+
+.header__right_BtnText {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+}
+
 
 .basket_menu {
   position: absolute;
   display: none;
   background-color: ghostwhite;
-}
-
-.main_item:focus~.drop__browse_menu,
-.main_item:active~.drop__browse_menu,
-.drop__browse_menu:hover {
-  display: block;
-}
-
-.account:focus~.basket_menu,
-.account:active~.basket_menu,
-.basket_menu:hover {
-  display: block;
+  right: 0;
 }
 
 
-.header__left_browseText {
-  font-size: 14px;
-  font-weight: 300;
-  color: rgba(34, 34, 34, 1);
-  padding: 10px;
-  letter-spacing: 0.03em;
-  line-height: 36px;
-
-}
-
-.header__left_browse i {
-  border: solid rgba(34, 34, 34, 1);
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-
-.header__right i {
-  border: solid rgba(255, 255, 255, 1);
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
 
 .menuBox .arrow__down,
 .header__right .arrow__down,
@@ -148,9 +151,9 @@ a {
   padding-left: 15px;
   font-size: 15px;
   color: rgba(255, 255, 255, 1);
-  text-align: right;
+  text-align: center;
   letter-spacing: 0.03em;
-  line-height: 36px;
+  line-height: 40px;
   padding-right: 10px;
 }
 
@@ -540,9 +543,7 @@ a {
   width: 104px;
   background-color: rgba(241, 109, 127, 1);
   border-radius: 0px 23px 23px 0px;
-}
-
-.btn_send_style {
+  display: block;
   font-size: 14px;
   color: rgba(255, 255, 255, 1);
   text-align: center;
@@ -599,31 +600,28 @@ a {
   padding-top: 29px;
 }
 
-.lowerMenu__menu_block {
-  display: flex;
-  flex-direction: column;
-}
-
 .lowerMenu__name {
   font-size: 18px;
+  padding: 15px 0px 30px 0px;
   font-weight: bold;
   color: rgba(241, 109, 127, 1);
-  text-align: right;
   letter-spacing: 0.03em;
   line-height: 26px;
   text-transform: uppercase;
-  text-align: start;
 }
 
-.lowerMenu__list {
+.lowerMenu__list a {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
-  padding-top: 45px;
+  line-height: 42px;
   font-size: 16px;
   color: rgba(137, 137, 137, 1);
-  text-align: right;
   letter-spacing: 0.03em;
-  line-height: 42px;
-  text-align: start;
+}
+
+.lowerMenu__list a:hover {
+  color: rgba(241, 109, 127, 1);
 }
 
 /* ====================================================== */
@@ -640,7 +638,7 @@ a {
 .footer__copyright {
   font-size: 16px;
   color: rgba(122, 122, 122, 1);
-  text-align: right;
+
   letter-spacing: 0.03em;
   line-height: 42px;
 }
@@ -651,7 +649,7 @@ a {
   justify-content: space-between;
 }
 
-.footer__socialBlock_imgBox_active,
+
 .footer__socialBlock_imgBox {
   width: 32px;
   height: 32px;
@@ -659,10 +657,70 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 0px gray;
 }
 
-.footer__socialBlock .footer__socialBlock_imgBox_active {
-  background-color: red;
+.footer__socialBlock_imgBox:hover {
+  background-color: rgba(241, 109, 127, 1);
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px 0px rgba(241, 109, 127, 1);
+  ;
 }
 
 /* ========================================================== */
+/* pagination */
+.pagination {
+  height: 44px;
+  width: 845px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-flickr {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 1px rgba(235, 235, 235, 1);
+  border-radius: 3px;
+}
+
+.pagination-flickr li {
+  list-style-type: none;
+}
+
+.pagination-flickr a {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(196, 196, 196, 1);
+  line-height: 26px;
+  list-style-type: none;
+}
+
+.pagination-flickr a:hover {
+  color: rgba(239, 91, 112, 1);
+}
+
+.pagination-flickr .next,
+.pagination-flickr .active {
+  color: rgba(239, 91, 112, 1);
+}
+
+.viewAll_btn {
+  width: 150px;
+  text-align: center;
+  border: 1px solid rgba(239, 91, 112, 1);
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(239, 91, 112, 1);
+  line-height: 40px;
+}
+
+.viewAll_btn:hover {
+  color: white;
+  border: 1px solid gainsboro;
+  background-color: rgba(239, 91, 112, 1);
+  border-radius: 3px;
+}

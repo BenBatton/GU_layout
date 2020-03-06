@@ -4,6 +4,8 @@
     justify-content: space-between;
 }
 
+/* ================================================== */
+/* ЛЕВОЕ БОКОВОЕ МЕНЮ */
 .leftMenu {
     width: 243px;
     display: block;
@@ -18,7 +20,7 @@
     padding: 20px;
     margin-bottom: 2px;
     border-left: 6px solid rgba(239, 91, 112, 1);
-    border-bottom: 1px solid rgba(111, 110, 110, 1);
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
     font-size: 14px;
     font-weight: bold;
     color: rgba(239, 91, 112, 1);
@@ -33,7 +35,6 @@
     color: whitesmoke;
     box-shadow: 1px 5px 10px -5px black;
     transition: all 0.5s ease;
-
 }
 
 .leftMenu li ul {
@@ -53,7 +54,8 @@
 .leftMenu li:hover>ul {
     display: block;
 }
-
+/* ===================================================== */
+/* ЧЕКБОКСЫ И ПРОЧИЕ СОРТИРОВКИ */
 .content {
     width: 845px;
     padding-left: 50px;
@@ -329,54 +331,3 @@ label[for='L']::before {
     display: block;
 }
 
-/* pagination */
-.pagination {
-    height: 44px;
-    width: 845px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.pagination-flickr {
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: solid 1px rgba(235, 235, 235, 1);
-    border-radius: 3px;
-}
-
-.pagination-flickr li {
-    list-style-type: none;
-}
-
-.pagination-flickr a {
-    font-size: 16px;
-    font-weight: 300;
-    color: rgba(196, 196, 196, 1);
-    line-height: 26px;
-    list-style-type: none;
-}
-
-.pagination-flickr .next,
-.pagination-flickr .active {
-    color: rgba(239, 91, 112, 1);
-}
-
-.viewAll_btn {
-    width: 150px;
-    text-align: center;
-    border: 1px solid rgba(239, 91, 112, 1);
-    border-radius: 3px;
-    font-size: 16px;
-    font-weight: 300;
-    color: rgba(239, 91, 112, 1);
-    line-height: 40px;
-}
-
-.viewAll_btn:hover {
-    color: white;
-    border: 1px solid gainsboro;
-    background-color: rgba(239, 91, 112, 1);
-    border-radius: 3px;
-}

@@ -21,34 +21,29 @@
             >bran<span class="header__left_logoTextStyleD">d</span></span
           ></a
         >
-        <form action="" class="header__form">
-          <div class="browse__block_menu">
-            <div class="header__left_browse">
-              <a class="main_item" href="javascript:void(0);" tabindex="1">
-                <span class="header__left_browseText">Browse</span
-                ><i class="arrow__down"></i
-              ></a>
-              <div class="drop__browse_menu">
-                <div class="drop__col">
-                  <h3 class="drop__h3">woman</h3>
-                  <ul class="drop__ul">
-                    <li><a href="#" class="drop__a">Dresses</a></li>
-                    <li><a href="#" class="drop__a">Tops</a></li>
-                    <li><a href="#" class="drop__a">Sweaters/Knits</a></li>
-                    <li><a href="#" class="drop__a">Denim</a></li>
-                    <li><a href="#" class="drop__a">Leggings/Pants</a></li>
-                    <li><a href="#" class="drop__a">Skirts/Shorts</a></li>
-                  </ul>
-                  <h3 class="drop__h3">woman</h3>
-                  <ul class="drop__ul">
-                    <li><a href="#" class="drop__a">Denim</a></li>
-                    <li><a href="#" class="drop__a">Leggings/Pants</a></li>
-                    <li><a href="#" class="drop__a">Skirts/Shorts</a></li>
-                  </ul>
+        <form action="" class="header__form">         
+              <details class="drop__browse_menu">
+                <summary class="browse_menu_style">Browse</summary>
+                <div class="drop">                  
+                  <div class="drop__col">
+                    <h3 class="drop__h3">woman</h3>
+                    <ul class="drop__ul">
+                      <li><a href="#" class="drop__a">Dresses</a></li>
+                      <li><a href="#" class="drop__a">Tops</a></li>
+                      <li><a href="#" class="drop__a">Sweaters/Knits</a></li>
+                      <li><a href="#" class="drop__a">Denim</a></li>
+                      <li><a href="#" class="drop__a">Leggings/Pants</a></li>
+                      <li><a href="#" class="drop__a">Skirts/Shorts</a></li>
+                    </ul>
+                    <h3 class="drop__h3">woman</h3>
+                    <ul class="drop__ul">
+                      <li><a href="#" class="drop__a">Denim</a></li>
+                      <li><a href="#" class="drop__a">Leggings/Pants</a></li>
+                      <li><a href="#" class="drop__a">Skirts/Shorts</a></li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
+              </details>            
           <input
             class="header__left_search"
             type="text"
@@ -63,13 +58,10 @@
       <div class="header__right">
         <a href="#"
           ><img class="header__cart" src="img/cart.png" alt="cart"
-        /></a>
-        <div class="header__right_Btn_block">
-          <a class="account" href="javascript:void(0);" tabindex="1"
-            ><span class="header__right_BtnText">My account</span
-            ><i class="arrow__down"></i
-          ></a>
-          <div class="basket_menu menu_style_left">
+        /></a>        
+          <details class="header__right_Btn_block">
+            <summary class="header__right_BtnText">My Account</summary>
+            <div class="basket_menu">
             <div class="basket_contents">
               <div class="basket_product">
                 <a href="#"
@@ -106,7 +98,7 @@
               </div>
             </div>
           </div>
-        </div>
+          </details>            
       </div>
     </header>
     <nav class="upperMenu">
@@ -114,7 +106,7 @@
         <li class="menu__list"><a class="menu__list_a" href="#">Home</a></li>
         <li class="menu__list">
           <a class="menu__list_a" href="#">Man</a>
-          <div class="drop ">
+          <div class="drop">
             <div class="drop__col">
               <h3 class="drop__h3">woman</h3>
               <ul class="drop__ul">
@@ -479,6 +471,7 @@
             </ul>
           </li>
         </ul>
+        
       </nav>
       <div class="content">
         <aside class="checkBox">
@@ -738,11 +731,10 @@
                   name="login"
                   placeholder="Enter Your Email"
                   size="30"
+                  required
                 />
               </div>
-              <div class="send__email__button">
-                <span class="btn_send_style">Subscribe</span>
-              </div>
+              <button class="send__email__button">Subscribe</button>
             </form>
           </div>
         </div>
@@ -769,31 +761,31 @@
         <div class="lowerMenu__menu_block">
           <div class="lowerMenu__name">company</div>
           <div class="lowerMenu__list">
-            <li>Home</li>
-            <li>Shop</li>
-            <li>About</li>
-            <li>How It Works</li>
-            <li>Contact</li>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">How It Works</a>
+            <a href="#">Contact</a>
           </div>
         </div>
         <div class="lowerMenu__menu_block">
           <div class="lowerMenu__name">information</div>
           <div class="lowerMenu__list">
-            <li>Tearms&Condition</li>
-            <li>Privacy Policy</li>
-            <li>How to Buy</li>
-            <li>How It Cell</li>
-            <li>Promotion</li>
+            <a href="#">Tearms&Condition</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">How to Buy</a>
+            <a href="#">How It Cell</a>
+            <a href="#">Promotion</a>
           </div>
         </div>
         <div class="lowerMenu__menu_block">
           <div class="lowerMenu__name">shop category</div>
           <div class="lowerMenu__list">
-            <li>Men</li>
-            <li>Women</li>
-            <li>Child</li>
-            <li>Apparel</li>
-            <li>Brows All</li>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Child</a>
+            <a href="#">Apparel</a>
+            <a href="#">Brows All</a>
           </div>
         </div>
       </nav>
@@ -803,7 +795,7 @@
           <div class="footer__socialBlock_imgBox">
             <a href=""><img src="img/f.png" alt=""/></a>
           </div>
-          <div class="footer__socialBlock_imgBox_active">
+          <div class="footer__socialBlock_imgBox">
             <a href=""><img src="img/t.png" alt=""/></a>
           </div>
           <div class="footer__socialBlock_imgBox">
