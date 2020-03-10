@@ -1,0 +1,81 @@
+.added__list 
+    display: flex
+    flex-direction: column
+    
+    
+    &_product
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 115px
+        padding-top: 25px
+        padding-bottom: 25px
+        border-bottom: 1px solid rgba(234, 234, 234, 1)
+        &_content
+            display: flex
+
+            a
+                width: 100px
+
+            .item-content
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                padding-left: 21px
+                .name
+                    font-size: 13px
+                    color: rgba(34, 34, 34, 1)
+                    text-align: right
+                    text-transform: uppercase
+                .color
+                    font-family: 'Lato'
+                    font-size: 13px
+                    color: rgba(87, 87, 87, 1)
+                    line-height: 20px
+                .size
+                    font-size: 13px
+                    font-weight: 300
+                    color: rgba(111, 110, 110, 1)
+        &_param
+            width: 588px
+            display: flex
+            justify-content: space-between
+
+            .unite-price,
+            .quantity,
+            .shipping,
+            .subtotal
+                font-size: 13px
+                color: rgba(101, 101, 101, 1)
+                line-height: 20px
+            .action
+                width: 15px
+                height: 15px
+                background-color: black
+
+.names__cols
+    border-bottom: 1px solid rgba(234, 234, 234, 1)
+    display: flex
+    justify-content: space-between
+    &_row
+        width: 610px
+        display: flex
+        justify-content: space-between
+        h5
+            font-size: 13px
+            font-weight: bold
+            color: rgba(34, 34, 34, 1)
+            letter-spacing: -0.01em
+            line-height: 20px
+            text-transform: uppercase
+        
+
+.btn-block
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid rgba(234, 234, 234, 1)
+    .left-btn,
+    .right-btn
+        height: 50px
+        width: 235px
+        background-color: grey
