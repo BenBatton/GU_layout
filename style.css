@@ -15,6 +15,28 @@ a {
   text-decoration: none;
 }
 
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
 .header {
   height: 100px;
   background-color: white;
@@ -32,8 +54,7 @@ a {
           align-items: center;
 }
 
-.header__left_logoTextStyleD,
-.header__left_logoText {
+.header__left_logoTextStyleD, .header__left_logoText {
   font-size: 27px;
   font-weight: 300;
   color: #222222;
@@ -48,38 +69,13 @@ a {
   text-transform: uppercase;
 }
 
-.header__left,
-.header__right,
-.header__form {
+.header__left, .header__right, .header__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.drop__browse_menu {
-  position: relative;
-  height: 38px;
-  width: 85px;
-  border: 1px solid #e6e6e6;
-}
-
-.drop__browse_menu[open] .drop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.browse_menu_style {
-  font-size: 14px;
-  font-weight: 300;
-  color: #222222;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: 0.03em;
-  line-height: 38px;
 }
 
 .header__right_Btn_block {
@@ -105,45 +101,9 @@ a {
   line-height: 32px;
 }
 
-@-webkit-keyframes rotate-vert-center {
-  0% {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-  }
-  100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@keyframes rotate-vert-center {
-  0% {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-  }
-  100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
 .header__right_BtnText:hover {
   -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
           animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-}
-
-.basket_menu {
-  position: absolute;
-  display: none;
-  background-color: white;
-  right: 0;
-}
-
-.menuBox .arrow__down,
-.header__right .arrow__down,
-.header__form .arrow__down {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(45deg);
 }
 
 .header__left_search {
@@ -177,6 +137,43 @@ a {
   letter-spacing: 0.03em;
   line-height: 40px;
   padding-right: 10px;
+}
+
+.basket_menu {
+  position: absolute;
+  display: none;
+  background-color: white;
+  right: 0;
+}
+
+.menuBox .arrow__down,
+.header__right .arrow__down,
+.header__form .arrow__down {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.drop__browse_menu {
+  position: relative;
+  height: 38px;
+  width: 85px;
+  border: 1px solid #e6e6e6;
+}
+
+.drop__browse_menu[open] .drop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.browse_menu_style {
+  font-size: 14px;
+  font-weight: 300;
+  color: #222222;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 38px;
 }
 
 .basket_contents {
