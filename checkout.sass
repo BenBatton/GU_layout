@@ -1,0 +1,123 @@
+$color-site-watermelon: rgba(241, 109, 127, 1)
+$color-darc-jungle-green: rgba(34, 34, 34, 1)
+$color-darc-gray: rgba(164, 164, 164, 1)
+$color-white: rgba(255, 255, 255, 1)
+$color-platinum: rgba(230, 230, 230, 1)
+
+details summary::-webkit-details-marker 
+    display: none;
+
+
+.infoblock
+    li
+        height: 72px
+        list-style-type: none
+        text-align: left
+        display: flex
+        flex-direction: column
+        justify-content: center
+        
+
+    &__menu
+        // position: relative
+        
+        
+    &__menu[open] .infoblock__drop
+        display: flex
+
+
+    &__style
+        font-size: 14px
+        font-weight: 300
+        color: $color-darc-jungle-green
+        font-weight: bold
+        height: 72px
+        letter-spacing: 0.03em
+        line-height: 38px
+        display: flex
+        flex-direction: column
+        justify-content: center
+    
+
+    &__drop 
+        // position: absolute
+        display: none
+        // z-index: 1000
+        
+        border-bottom: 1px solid rgba(230, 230, 230, 1)
+        &_left
+            width: 390px
+            padding-bottom: 74px
+            &_h3
+                font-size: 13px
+                color: $color-darc-jungle-green
+                text-transform: uppercase
+            &_h4
+                font-size: 13px
+                color: $color-platinum
+                line-height: 20px
+                padding-top: 15px
+            &_btn
+                height: 50px
+                width: 180px
+                background-color: $color-white
+                border: 1px solid $color-platinum
+                font-size: 14px
+                font-weight: bold
+                color: $color-darc-jungle-green
+                text-transform: uppercase
+                text-align: center
+                display: flex
+                flex-direction: column
+                justify-content: center
+            &_btn:hover
+                background-color: $color-site-watermelon
+                color: $color-white
+        &_right
+            width: 390px
+            paddinng-bottom: 74px
+            &_h3
+                font-size: 13px
+                color: $color-darc-jungle-green
+                text-transform: uppercase
+            &_h4
+                font-size: 13px
+                color: rgba(179, 178, 178, 1)
+                line-height: 20px
+            &_email,
+            &_pass
+                height: 45px
+                width: 390px
+                background-color: $color-white
+                border: 1px solid $color-platinum
+                margin-top: 15px
+                margin-bottom: 23px
+            &_btnblock
+                display: flex
+                
+                &_login
+                    height: 50px
+                    width: 180px
+                    background-color: $color-white
+                    border: 1px solid $color-platinum
+                    font-size: 14px
+                    font-weight: bold
+                    color: rgba(74, 74, 74, 1)
+                    text-transform: uppercase
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    text-align: center
+                &_login:hover
+                    background-color: $color-site-watermelon
+                    color: $color-white
+                    
+                &_h3
+                    margin: auto
+                    font-size: 14px
+                    color: rgba(34, 34, 34, 1)
+                    line-height: 20px
+           
+
+
+

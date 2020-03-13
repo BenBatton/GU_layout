@@ -1,155 +1,154 @@
 .catalog {
-    display: flex;
-    margin-top: 59px;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 59px;
+  justify-content: space-between;
 }
 
 /* ================================================== */
 /* ЛЕВОЕ БОКОВОЕ МЕНЮ */
 .leftMenu {
-    width: 243px;
-    display: block;
+  width: 243px;
+  display: block;
 }
 
-.leftMenu>ul li {
-    list-style-type: none;
-    position: relative;
+.leftMenu > ul li {
+  list-style-type: none;
+  position: relative;
 }
 
 .leftMenu a {
-    padding: 20px;
-    margin-bottom: 2px;
-    border-left: 6px solid rgba(239, 91, 112, 1);
-    border-bottom: 1px solid rgba(235, 235, 235, 1);
-    font-size: 14px;
-    font-weight: bold;
-    color: rgba(239, 91, 112, 1);
-    line-height: 20px;
-    text-transform: uppercase;
-    display: block;
-    transition: all 0.5s ease;
+  padding: 20px;
+  margin-bottom: 2px;
+  border-left: 6px solid rgba(239, 91, 112, 1);
+  border-bottom: 1px solid rgba(235, 235, 235, 1);
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(239, 91, 112, 1);
+  line-height: 20px;
+  text-transform: uppercase;
+  display: block;
+  transition: all 0.5s ease;
 }
 
 .leftMenu li a:hover {
-    background: rgba(239, 91, 112, 1);
-    color: whitesmoke;
-    box-shadow: 1px 5px 10px -5px black;
-    transition: all 0.5s ease;
+  background: rgba(239, 91, 112, 1);
+  color: whitesmoke;
+  box-shadow: 1px 5px 10px -5px black;
+  transition: all 0.5s ease;
 }
 
 .leftMenu li ul {
-    display: none;
+  display: none;
 }
 
-.leftMenu li>ul li a {
-    padding: 5px;
+.leftMenu li > ul li a {
+  padding: 5px;
 
-    font-size: 14px;
-    padding-left: 35px;
-    color: rgba(111, 110, 110, 1);
-    line-height: 33px;
-    text-transform: none;
+  font-size: 14px;
+  padding-left: 35px;
+  color: rgba(111, 110, 110, 1);
+  line-height: 33px;
+  text-transform: none;
 }
 
-.leftMenu li:hover>ul {
-    display: block;
+.leftMenu li:hover > ul {
+  display: block;
 }
 /* ===================================================== */
 /* ЧЕКБОКСЫ И ПРОЧИЕ СОРТИРОВКИ */
 .content {
-    width: 845px;
-    padding-left: 50px;
-    display: flex;
-    flex-direction: column;
+  width: 845px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .checkBox {
-    height: 177px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 177px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .elements {
-    padding-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .sortA__box {
-    margin-top: 12px;
-    height: 74px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 12px;
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Trending Now */
 .trending__block {
-    width: 160px;
+  width: 160px;
 }
 
 .size__block_name,
 .price__block_name,
 .trending_block_name {
-    font-size: 14px;
-    font-weight: bold;
-    color: rgba(111, 110, 110, 1);
-    line-height: 20px;
-    text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(111, 110, 110, 1);
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
-.trending__block>ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.trending__block > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .trending__block li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .trending__block a {
-    font-size: 14px;
-    color: rgba(111, 110, 110, 1);
-    line-height: 20px;
+  font-size: 14px;
+  color: rgba(111, 110, 110, 1);
+  line-height: 20px;
 }
 
 .trending__block a:hover {
-    color: #000;
-    box-shadow: 1px 5px 10px -5px black;
+  color: #000;
+  box-shadow: 1px 5px 10px -5px black;
 }
-
 
 /* SIZE */
 .size__block li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .size__block ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .size__block .up {
-    padding-top: 5px;
-    width: 236px;
+  padding-top: 5px;
+  width: 236px;
 }
 
 .size__block .down {
-    width: 173px;
+  width: 173px;
 }
 
-.size__block>ul li {
-    display: flex;
+.size__block > ul li {
+  display: flex;
 }
 
-.size__block>ul li label {
-    font-size: 14px;
-    color: rgba(111, 110, 110, 1);
-    line-height: 20px;
-    text-transform: uppercase;
+.size__block > ul li label {
+  font-size: 14px;
+  color: rgba(111, 110, 110, 1);
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 label[for="XXS"],
@@ -159,47 +158,47 @@ label[for="M"],
 label[for="XXL"],
 label[for="XL"],
 label[for="L"] {
-    cursor: pointer;
-    padding-left: 25px;
-    display: block;
-    position: relative;
+  cursor: pointer;
+  padding-left: 25px;
+  display: block;
+  position: relative;
 }
 
-label[for='XXS']::before,
-label[for='XS']::before,
-label[for='S']::before,
-label[for='M']::before,
-label[for='XXL']::before,
-label[for='XL']::before,
-label[for='L']::before {
-    content: '';
-    position: absolute;
-    border: 2px solid rgba(111, 110, 110, 1);
-    width: 13px;
-    height: 13px;
-    top: 0;
-    left: 0;
-    border-radius: 3px;
-    transition: .2s;
+label[for="XXS"]::before,
+label[for="XS"]::before,
+label[for="S"]::before,
+label[for="M"]::before,
+label[for="XXL"]::before,
+label[for="XL"]::before,
+label[for="L"]::before {
+  content: "";
+  position: absolute;
+  border: 2px solid rgba(111, 110, 110, 1);
+  width: 13px;
+  height: 13px;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  transition: 0.2s;
 }
 
-#XXS:checked+label::before,
-#XS:checked+label::before,
-#S:checked+label::before,
-#M:checked+label::before,
-#XXL:checked+label::before,
-#XL:checked+label::before,
-#L:checked+label::before {
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-right: 1px solid rgba(111, 110, 110, 1);
-    border-bottom: 1px solid rgba(111, 110, 110, 1);
-    transform: rotate(40deg);
-    width: 12px;
-    height: 22px;
-    transform-origin: 100% 100%;
-    top: -4px;
-    left: -4px;
+#XXS:checked + label::before,
+#XS:checked + label::before,
+#S:checked + label::before,
+#M:checked + label::before,
+#XXL:checked + label::before,
+#XL:checked + label::before,
+#L:checked + label::before {
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid rgba(111, 110, 110, 1);
+  border-bottom: 1px solid rgba(111, 110, 110, 1);
+  transform: rotate(40deg);
+  width: 12px;
+  height: 22px;
+  transform-origin: 100% 100%;
+  top: -4px;
+  left: -4px;
 }
 
 #XXS,
@@ -216,118 +215,114 @@ label[for='L']::before {
 #XXL,
 #XL,
 #L:checked {
-    display: none;
+  display: none;
 }
 
 /* PRICE */
 .price__block {
-
-    width: 263px;
-    background-color: gray;
+  width: 263px;
+  background-color: gray;
 }
 
 .price__block .price__block_name {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 /* Sort Box for Name & Show Num product */
 .sortB__box {
-    height: 50px;
-    display: flex;
-    background-color: rgba(243, 243, 243, 1);
-
+  height: 50px;
+  display: flex;
+  background-color: rgba(243, 243, 243, 1);
 }
 
 .sortByName__block {
-    margin-left: 10px;
-    margin-top: 10px;
-    height: 30px;
-    width: 153px;
-    display: flex;
-    flex-direction: row;
-
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 30px;
+  width: 153px;
+  display: flex;
+  flex-direction: row;
 }
 
 .showNumItems__block {
-    margin-left: 10px;
-    margin-top: 10px;
-    height: 30px;
-    width: 119px;
-    display: flex;
-    flex-direction: row;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 30px;
+  width: 119px;
+  display: flex;
+  flex-direction: row;
 }
 
 .typeBox {
-    width: 65px;
-    text-align: center;
-    background-color: #fff;
-    margin-right: 2px;
-    font-size: 14px;
-    color: rgba(111, 110, 110, 1);
-    line-height: 30px;
+  width: 65px;
+  text-align: center;
+  background-color: #fff;
+  margin-right: 2px;
+  font-size: 14px;
+  color: rgba(111, 110, 110, 1);
+  line-height: 30px;
 }
 
 .menuBox {
-    text-align: center;
-    width: 86px;
-    background-color: #fff;
-    font-size: 14px;
-    color: rgba(111, 110, 110, 1);
-    line-height: 30px;
-    display: block;
+  text-align: center;
+  width: 86px;
+  background-color: #fff;
+  font-size: 14px;
+  color: rgba(111, 110, 110, 1);
+  line-height: 30px;
+  display: block;
 }
 
 .menuBox i {
-    margin-left: 25px;
-    margin-bottom: 2px;
-    border: solid rgba(111, 110, 110, 1);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
+  margin-left: 25px;
+  margin-bottom: 2px;
+  border: solid rgba(111, 110, 110, 1);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
 }
 
 /* ========================================= */
-.menuBox>ul li {
-    list-style-type: none;
-    position: relative;
+.menuBox > ul li {
+  list-style-type: none;
+  position: relative;
 }
 
 .menuBox a {
-    margin-bottom: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    color: rgba(239, 91, 112, 1);
-    line-height: 20px;
-    text-transform: uppercase;
-    display: block;
-    transition: all 0.5s ease;
-    background: white;
-    opacity: 0.7;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(239, 91, 112, 1);
+  line-height: 20px;
+  text-transform: uppercase;
+  display: block;
+  transition: all 0.5s ease;
+  background: white;
+  opacity: 0.7;
 }
 
 .menuBox li a:hover {
-    background: gray;
-    color: whitesmoke;
-    box-shadow: 1px 5px 10px -5px black;
-    transition: all 0.5s ease;
-    opacity: 1;
+  background: gray;
+  color: whitesmoke;
+  box-shadow: 1px 5px 10px -5px black;
+  transition: all 0.5s ease;
+  opacity: 1;
 }
 
 .menuBox li ul {
-    position: absolute;
-    z-index: 1000;
-    display: none;
+  position: absolute;
+  z-index: 1000;
+  display: none;
 }
 
-.menuBox li>ul li a {
-    font-size: 14px;
-    width: 86px;
-    color: rgba(111, 110, 110, 1);
-    line-height: 26px;
+.menuBox li > ul li a {
+  font-size: 14px;
+  width: 86px;
+  color: rgba(111, 110, 110, 1);
+  line-height: 26px;
 }
 
-.menuBox li:hover>ul {
-    display: block;
+.menuBox li:hover > ul {
+  display: block;
 }
-

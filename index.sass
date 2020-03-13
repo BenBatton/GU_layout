@@ -1,0 +1,214 @@
+$color-site-watermelon: rgba(241, 109, 127, 1)
+$color-darc-jungle-green: rgba(34, 34, 34, 1)
+$color-darc-gray: rgba(164, 164, 164, 1)
+$color-white: rgba(255, 255, 255, 1)
+    
+.promo 
+    height: 614px
+    background-color: #e8e8e8
+    background-image: url(img/promo-back.png)
+    background-position: center -51px
+    background-repeat: no-repeat
+    &__content 
+        margin-top: 224px
+        float: left
+        border-left: 12px solid $color-site-watermelon
+        padding-left: 12px
+    &__h2 
+        font-size: 60px
+        font-weight: 900
+        color: $color-darc-jungle-green
+        letter-spacing: 0.03em
+        line-height: 45px
+        margin-bottom: 12px
+    &__h3 
+        font-size: 40px
+        font-weight: 900
+        color: $color-darc-jungle-green
+        letter-spacing: 0.03em
+        line-height: 33px
+    &__content_textStyleRed 
+        color: $color-site-watermelon
+
+
+.categories 
+    display: flex
+    justify-content: space-between
+    margin-top: 98px
+    
+    &__forMen
+        display: block
+        height: 542px
+        width: 560px
+        background-image: url(img/cat_forMen_back.png)
+    
+        
+    &__accesories 
+        display: block
+        height: 261px
+        width: 560px
+        background-image: url(img/cat_accesories_back.png)
+    
+
+    &__women 
+        display: block
+        height: 261px
+        width: 560px
+        background-image: url(img/cat_women_back.png)      
+
+    &__forKids 
+        display: block
+        height: 542px
+        width: 560px
+        background-image: url(img/cat_forKids_back.png)    
+    
+    &__forMen:hover .categories_name,
+    &__accesories:hover .categories_name,
+    &__women:hover .categories_name,
+    &__forKids:hover .categories_name
+        transform: translate(0, 45px)    
+
+    &_name 
+        margin-top: 26px
+        display: inline-block
+        padding: 16px 18px 16px 18px
+        background-color: #fff
+        transition: transform 1s
+
+    &_h3 
+        font-size: 18px
+        font-weight: 900
+        color: $color-darc-jungle-green
+        letter-spacing: 0.03em
+    &_h2 
+        font-size: 30px
+        font-weight: 900
+        color: $color-site-watermelon
+        letter-spacing: 0.03em
+    &_padding 
+        margin-bottom: 20px
+
+
+.feturedItems
+    &__content 
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__name_h2 
+        font-size: 30px
+        font-weight: bold
+        color: $color-darc-jungle-green
+        text-align: center
+        letter-spacing: 0.03em
+        line-height: 54px
+        padding-top: 46px
+    &__name_h4
+        font-size: 14px
+        color: $color-darc-gray
+        text-align: center
+        letter-spacing: 0.03em
+        line-height: 14px
+        padding-bottom: 46px
+    &__btn 
+        height: 48px
+        width: 212px
+        color: $color-white
+        font-size: 16px
+        font-weight: bold
+        background-color: $color-site-watermelon
+        text-align: center
+        letter-spacing: 0.03em
+        line-height: 14px
+        position: relative
+        left: 50%
+        transform: translate(-50%, 0)
+        i 
+            border: solid $color-white
+            border-width: 0 3px 3px 0
+            display: inline-block
+            padding: 3px
+        .arrow__right 
+            transform: rotate(-45deg)
+            -webkit-transform: rotate(-45deg)
+    
+
+.discount
+    margin-top: 113px
+    display: flex
+    justify-content: space-between
+    height: 529px
+    &__Left 
+        width: 767px
+        background: url(img/discount_back_0.png), url(img/discount.png)
+    &__Right 
+        width: 373px
+        background-color: black
+        display: flex
+        flex-direction: column
+    &__h2 
+        display: block
+        padding-top: 146px
+        padding-left: 39px
+        font-size: 54px
+        font-weight: bold
+        color: $color-white
+        letter-spacing: 0.03em
+        text-align: left
+    &__h2 .colorRed 
+        font-size: 54px
+        font-weight: bold
+        color: $color-site-watermelon
+        letter-spacing: 0.03em
+    &__h3 
+    
+        font-size: 32px
+        font-weight: bold
+        color: $color-white
+        letter-spacing: 0.03em
+    &__Right 
+        width: 373px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+    &__Right .block 
+        display: flex
+        justify-content: space-around
+    &__Right .description 
+        width: 236px
+
+
+.delivery_pic 
+    width: 45px
+    height: 35px
+    background-image: url(img/car.png)
+    background-repeat: no-repeat
+
+
+.sales_pic 
+    width: 40px
+    height: 40px
+    background-image: url(img/percent.png)
+    background-repeat: no-repeat
+
+
+.quality_pic 
+    width: 47px
+    height: 35px
+    background-image: url(img/crown.png)
+    background-repeat: no-repeat
+
+
+.description_h2 
+    font-size: 20px
+    font-weight: bold
+    color: $color-white
+    letter-spacing: 0.03em
+
+
+.description_h4 
+    font-size: 14px
+    font-weight: 300
+    color: $color-white
+    letter-spacing: 0.03em
+    line-height: 24px
+

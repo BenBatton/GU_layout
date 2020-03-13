@@ -1,81 +1,256 @@
-.added__list 
+$color-site-watermelon: rgba(241, 109, 127, 1)
+$color-darc-jungle-green: rgba(34, 34, 34, 1)
+$color-darc-gray: rgba(164, 164, 164, 1)
+$color-platinum: rgba(230, 230, 230, 1)  
+$color-white: rgba(255, 255, 255, 1)
+    
+
+.cols
+    border-bottom: 1px solid $color-platinum
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 52px
+    padding-top: 70px
+    h5
+        font-size: 13px
+        font-weight: bold
+        color: $color-darc-jungle-green
+        letter-spacing: -0.01em
+        line-height: 20px
+        text-transform: uppercase
+    &_row
+        width: 610px
+        display: flex
+        justify-content: space-between
+
+.list
     display: flex
     flex-direction: column
-    
-    
-    &_product
+    &__product
+        list-style-type: none
         display: flex
         justify-content: space-between
         align-items: center
         height: 115px
         padding-top: 25px
         padding-bottom: 25px
-        border-bottom: 1px solid rgba(234, 234, 234, 1)
-        &_content
+        border-bottom: 1px solid $color-platinum
+        &__content
+            width: 278px
             display: flex
-
-            a
+            justify-content: space-between
+            &__img
                 width: 100px
-
-            .item-content
+            &_item
                 display: flex
                 flex-direction: column
                 justify-content: space-around
                 padding-left: 21px
-                .name
+                &_nameH3
                     font-size: 13px
-                    color: rgba(34, 34, 34, 1)
+                    color: $color-darc-jungle-green
                     text-align: right
                     text-transform: uppercase
-                .color
+                &_name
                     font-family: 'Lato'
                     font-size: 13px
-                    color: rgba(87, 87, 87, 1)
+                    color: $color-darc-jungle-green
                     line-height: 20px
-                .size
+                &_content
                     font-size: 13px
                     font-weight: 300
                     color: rgba(111, 110, 110, 1)
         &_param
-            width: 588px
-            display: flex
-            justify-content: space-between
+            width: 555px;
+            padding-right: 13px;
+            display: flex;
+            justify-content: space-between;
 
-            .unite-price,
-            .quantity,
-            .shipping,
-            .subtotal
+            &_unite-price,
+            &_quantity,
+            &_shipping,
+            &_subtotal
                 font-size: 13px
-                color: rgba(101, 101, 101, 1)
+                color: $color-darc-gray
                 line-height: 20px
-            .action
-                width: 15px
-                height: 15px
-                background-color: black
-
-.names__cols
-    border-bottom: 1px solid rgba(234, 234, 234, 1)
-    display: flex
-    justify-content: space-between
-    &_row
-        width: 610px
-        display: flex
-        justify-content: space-between
-        h5
-            font-size: 13px
-            font-weight: bold
-            color: rgba(34, 34, 34, 1)
-            letter-spacing: -0.01em
-            line-height: 20px
-            text-transform: uppercase
-        
-
+                &_action
+                    width: 15px    
+      
 .btn-block
+    height: 50px
+    padding-top: 44px
+    padding-bottom: 63px
     display: flex
     justify-content: space-between
-    border-bottom: 1px solid rgba(234, 234, 234, 1)
-    .left-btn,
-    .right-btn
-        height: 50px
+    
+    
+    &__left,
+    &__right
+        display: flex;
+        flex-direction: column
+        justify-content: center
+        text-align: center
         width: 235px
-        background-color: grey
+        border: 1px solid $color-platinum
+        font-size: 14px
+        font-weight: bold
+        color: $color-darc-jungle-green
+        text-transform: uppercase
+
+    &__left:hover,
+    &__right:hover
+        background-color: $color-site-watermelon
+        color: $color-white
+
+
+
+.form
+    padding-top: 63px
+    padding-bottom: 79px
+    display: flex
+    justify-content: space-between
+    &__adress
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 355px
+        height: 268px
+        &__name
+            
+            font-size: 16px
+            font-weight: bold
+            color: $color-darc-jungle-green
+            text-transform: uppercase
+        &__sity,
+        &__state,
+        &__zip
+            width: 355px
+            height: 45px
+            border: 1px solid $color-platinum
+            font-size: 13px
+            font-weight: 300
+            line-height: 44px
+            color: $color-darc-gray
+            padding-left: 18px
+            
+        &__sity
+            position: relative
+        &__sity[open] .drop 
+            display: flex
+
+
+
+
+        &__quote
+            height: 35px
+            width: 100px
+            border: 1px solid $color-platinum
+            font-size: 11px
+            font-weight: bold
+            color: $color-darc-jungle-green
+            display: flex
+            flex-direction: column
+            justify-content: center
+            text-align: center
+            text-transform: uppercase
+        &__quote:hover
+            background-color: $color-site-watermelon
+            color: $color-white
+            
+
+    &__coupon
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 355px
+        height: 184px
+        &__name
+            font-size: 16px
+            font-weight: bold
+            color: $color-darc-jungle-green
+            text-transform: uppercase
+        &__code
+            font-size: 14px
+            font-weight: 300
+            color: $color-darc-jungle-green
+            
+
+        &__state
+            font-size: 13px
+            padding-left: 18px
+            font-weight: 300
+            color: $color-platinum
+            height: 45px
+            border: 1px solid $color-platinum
+        &__apply
+            height: 35px
+            width: 118px
+            font-size: 11px
+            font-weight: bold
+            color: $color-darc-jungle-green
+            text-transform: uppercase
+            border: 1px solid $color-platinum
+            display: flex
+            flex-direction: column
+            justify-content: center
+            text-align: center
+        &__apply:hover
+            background-color: $color-site-watermelon
+            color: $color-white
+
+    &__total             
+        width: 355px
+        height: 214px
+        background-color: rgba(245, 243, 243, 1)
+        display: flex
+        justify-content: center
+        &_set_width
+            width: 273px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            &_up
+                height: 104px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                
+                &_sub
+                    text-align: end
+                    font-size: 11px
+                    color: rgba(74, 74, 74, 1)
+                    text-transform: uppercase
+                &_grand
+                    padding-top: 14px
+                    text-align: end
+                    font-size: 16px
+                    font-weight: bold
+                    color: rgba(34, 34, 34, 1)
+                    text-transform: uppercase
+                    .red
+                        color: $color-site-watermelon
+            &_down
+                height: 109px
+                border-top: 1px solid $color-platinum
+                display: flex
+                flex-direction: column
+                justify-content: center
+                text-align: center
+
+                &_btn
+                    
+                    height: 50px
+                    background-color: $color-site-watermelon
+                    font-size: 16px
+                    font-weight: bold
+                    color: rgba(255, 255, 255, 1)
+                    text-transform: uppercase
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    text-align: center
+                &_btn:hover
+                    background-color: rgba(255, 255, 255, 1)
+                    border: 1px solid $color-platinum
+                    color: $color-site-watermelon
