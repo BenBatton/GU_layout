@@ -167,11 +167,6 @@
   -webkit-transform: rotate(-45deg);
 }
 
-.feturedItems__btn:hover {
-  -webkit-animation: rotate-scale-up-diag-1 0.7s linear both;
-  animation: rotate-scale-up-diag-1 0.7s linear both;
-}
-
 .discount {
   margin-top: 113px;
   display: -webkit-box;

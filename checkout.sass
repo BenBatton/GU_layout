@@ -7,24 +7,19 @@ $color-platinum: rgba(230, 230, 230, 1)
 details summary::-webkit-details-marker 
     display: none;
 
+a
+    text-decoration: none
 
 .infoblock
     li
-        height: 72px
         list-style-type: none
         text-align: left
-        display: flex
-        flex-direction: column
-        justify-content: center
-        
 
     &__menu
-        // position: relative
-        
-        
+        border-bottom: 1px solid rgba(230, 230, 230, 1)
+                
     &__menu[open] .infoblock__drop
         display: flex
-
 
     &__style
         font-size: 14px
@@ -37,24 +32,21 @@ details summary::-webkit-details-marker
         display: flex
         flex-direction: column
         justify-content: center
-    
-
-    &__drop 
-        // position: absolute
-        display: none
-        // z-index: 1000
+        text-transform: uppercase
         
-        border-bottom: 1px solid rgba(230, 230, 230, 1)
+    &__drop 
+        display: none
         &_left
             width: 390px
             padding-bottom: 74px
+            padding-left: 35px
             &_h3
                 font-size: 13px
                 color: $color-darc-jungle-green
                 text-transform: uppercase
             &_h4
                 font-size: 13px
-                color: $color-platinum
+                color: rgba(179, 178, 178, 1)
                 line-height: 20px
                 padding-top: 15px
             &_btn
@@ -94,8 +86,8 @@ details summary::-webkit-details-marker
                 margin-bottom: 23px
             &_btnblock
                 display: flex
-                
                 &_login
+                    margin-top: 20px
                     height: 50px
                     width: 180px
                     background-color: $color-white
@@ -111,12 +103,11 @@ details summary::-webkit-details-marker
                 &_login:hover
                     background-color: $color-site-watermelon
                     color: $color-white
-                    
-                &_h3
-                    margin: auto
-                    font-size: 14px
-                    color: rgba(34, 34, 34, 1)
-                    line-height: 20px
+                    &_h3
+                        margin: auto
+                        font-size: 14px
+                        color: rgba(34, 34, 34, 1)
+            
            
 
 

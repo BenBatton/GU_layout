@@ -3,20 +3,16 @@ $color-darc-jungle-green: rgba(34, 34, 34, 1)
 $color-darc-gray: rgba(164, 164, 164, 1)
 $color-white: rgba(255, 255, 255, 1)
 $color-platinum: rgba(230, 230, 230, 1)
-
     
 * 
     margin: 0
     padding: 0
 
-
 body 
     font-family: "Lato"
 
-
 .center 
     padding: 0 calc(50% - 570px)
-
 
 a 
     text-decoration: none
@@ -35,7 +31,6 @@ a
     display: flex
     justify-content: space-between
     align-items: center
-
     &__left_logoTextStyleD,
     &__left_logoText 
         font-size: 27px
@@ -44,67 +39,59 @@ a
         letter-spacing: 0.03em
         line-height: 32px
         text-transform: uppercase
-
     &__left_logoTextStyleD 
         font-weight: 900
         color: $color-site-watermelon
         text-transform: uppercase
-
-    &__left,
-    &__right,
     &__form 
         display: flex
         align-items: center
-
-    &__right_Btn_block 
-        position: relative
-        height: 38px
-        width: 130px
-        background-color: $color-site-watermelon
-        border-radius: 3px
-        z-index: 1000
-
-    &__right_Btn_block[open] .basket_menu 
+    &__right
         display: flex
-
-    &__right_BtnText 
-        font-size: 15px
-        color: $color-white
-        text-align: center
-        letter-spacing: 0.03em
-        line-height: 32px
-
-    &__right_BtnText:hover
-        animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
-
-    &__left_search 
-        height: 38px
-        width: 317px
-        background-color: $color-white
-        border: 1px solid $color-platinum
-        border-radius: 0px 3px 3px 0px
-
-    &__left_imgBoxBtn 
-        width: 38px
-        height: 38px
-
+        align-items: center
+        &_Btn_block 
+            position: relative
+            height: 38px
+            width: 130px
+            background-color: $color-site-watermelon
+            border-radius: 3px
+            z-index: 1000
+        &_Btn_block[open] .basket_menu 
+            display: flex
+        &_BtnText 
+            font-size: 15px
+            color: $color-white
+            text-align: center
+            letter-spacing: 0.03em
+            line-height: 32px
+        &_Btn_block
+            height: 38px
+            width: 130px
+            background-color: $color-site-watermelon
+        &_BtnText 
+            padding-left: 15px
+            font-size: 15px
+            color: $color-white
+            text-align: center
+            letter-spacing: 0.03em
+            line-height: 40px
+            padding-right: 10px
+        &_BtnText:hover
+            animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+    &__left
+        display: flex
+        align-items: center
+        &_search 
+            height: 38px
+            width: 317px
+            background-color: $color-white
+            border: 1px solid $color-platinum
+            border-radius: 0px 3px 3px 0px
+        &_imgBoxBtn 
+            width: 38px
+            height: 38px
     &__cart 
         margin-right: 26px
-
-    &__right_Btn_block 
-        height: 38px
-        width: 130px
-        background-color: $color-site-watermelon
-
-    &__right_BtnText 
-        padding-left: 15px
-        font-size: 15px
-        color: $color-white
-        text-align: center
-        letter-spacing: 0.03em
-        line-height: 40px
-        padding-right: 10px
-
 
 .basket_menu 
     position: absolute
@@ -112,17 +99,11 @@ a
     background-color: $color-white
     right: 0
 
-
-
-
 .menuBox .arrow__down,
 .header__right .arrow__down,
 .header__form .arrow__down 
     transform: rotate(-45deg)
     -webkit-transform: rotate(45deg)
-
-
-
 
 .drop__browse_menu 
     position: relative
@@ -130,12 +111,8 @@ a
     width: 85px
     border: 1px solid $color-platinum
     
-
-
-
 .drop__browse_menu[open] .drop 
     display: flex
-
 
 .browse_menu_style 
     font-size: 14px
@@ -146,61 +123,44 @@ a
     letter-spacing: 0.03em
     line-height: 38px
 
-
-.basket_contents 
-    height: 440px
-    width: 262px
-    padding-top: 30px
-    background-color: $color-white
-    border-radius: 5px
-
-
-.basket_product 
-    display: flex
-    padding: 17px
-    border-bottom: 1px solid rgba(237, 237, 237, 0.75)
-
-
-
-.basket_item_content 
-    display: flex
-    flex-direction: column
-
-
-.basket_product_name,
-.rating_img,
-.basket_product_price 
-    padding: 5px
-
-
-.basket_product_name 
-    font-size: 12px
-    font-weight: bold
-    color: $color-darc-jungle-green
-    text-align: right
-    text-transform: uppercase
-
-
-
-.basket_product_price 
-    font-size: 12px
-    color: $color-site-watermelon
-    text-transform: uppercase
-
+.basket
+    &_contents 
+        height: 440px
+        width: 262px
+        padding-top: 30px
+        background-color: $color-white
+        border-radius: 5px
+    &_product 
+        display: flex
+        padding: 17px
+        border-bottom: 1px solid rgba(237, 237, 237, 0.75)
+    &_item_content 
+        display: flex
+        flex-direction: column
+    &_product_name 
+        font-size: 12px
+        font-weight: bold
+        color: $color-darc-jungle-green
+        text-align: right
+        text-transform: uppercase
+        padding: 5px
+    &_product_price 
+        font-size: 12px
+        color: $color-site-watermelon
+        text-transform: uppercase
+        padding: 5px
+    &_total 
+        font-size: 16px
+        font-weight: bold
+        color: $color-darc-jungle-green
+        text-transform: uppercase
+        margin: 19px 17px 32px 17px
+        display: flex
+        justify-content: space-between
 
 .rating_img 
     width: 56px
-
-
-.basket_total 
-    font-size: 16px
-    font-weight: bold
-    color: $color-darc-jungle-green
-    text-transform: uppercase
-    margin: 19px 17px 32px 17px
-    display: flex
-    justify-content: space-between
-
+    padding: 5px
 
 .btn_checkout 
     display: block
@@ -215,7 +175,6 @@ a
     color: $color-site-watermelon
     text-transform: uppercase
 
-
 .btn_goto-cart 
     display: block
     height: 50px
@@ -229,38 +188,32 @@ a
     color: $color-darc-gray
     text-transform: uppercase
 
-
-
-
 .logo 
     display: flex
     align-items: center
     margin-right: 37px
-
-
-.logo__img 
-    margin-right: 13px
-
+    &__img 
+        margin-right: 13px
 
 .menu 
     display: flex
     justify-content: center
-
-
-
-.drop__col>ul,
-.upperMenu>ul 
-    list-style: none
-
-
-.menu__list 
-    position: relative
-
-
-.menu__list:hover .drop 
-    display: flex
-
-
+    &__list 
+        position: relative
+    &__list:hover .drop 
+        display: flex
+    &__list_a 
+        padding: 20px
+        display: block
+        font-size: 14px
+        font-weight: bold
+        color: $color-darc-jungle-green
+        line-height: 26px
+        text-transform: uppercase
+        border-bottom: 1px solid $color-white
+    &__list_a:hover 
+        border-bottom: 1px solid $color-site-watermelon
+        color: $color-site-watermelon
 
 .drop 
     position: absolute
@@ -269,124 +222,81 @@ a
     opacity: 0.9
     padding: 25px
     z-index: 1000
+    &__col 
+        margin-right: 46px
+        width: 200px
+    &__col>ul
+        list-style: none
+    &__col:last-of-type 
+        margin-right: 0
+    &__h3 
+        font-size: 14px
+        color: $color-darc-jungle-green
+        letter-spacing: 0.03em
+        line-height: 32px
+        text-transform: uppercase
+        border-bottom: 1px solid $color-platinum
+        margin-bottom: 8px
+    &__a 
+        list-style: none
+        display: block
+        font-size: 14px
+        color: $color-darc-gray
+        letter-spacing: 0.03em
+        line-height: 28px
+    &__a:hover 
+        color: $color-site-watermelon
+    &_center 
+        right: -300%
+    &_last 
+        right: 0
+    &__a_img 
+        padding-top: 20px
+        margin-left: -25px
 
-
-.drop__col 
-    margin-right: 46px
-    width: 200px
-
-
-.drop__col:last-of-type 
-    margin-right: 0
-
-
-.upperMenu .menu__list_a 
-    padding: 20px
+.upperMenu
     display: block
     font-size: 14px
     font-weight: bold
     color: $color-darc-jungle-green
     line-height: 26px
     text-transform: uppercase
-
-
-
-
-.drop__h3 
-    font-size: 14px
-    color: $color-darc-jungle-green
-    letter-spacing: 0.03em
-    line-height: 32px
-    text-transform: uppercase
-    border-bottom: 1px solid $color-platinum
-    margin-bottom: 8px
-
-
-
-.drop__a 
-    list-style: none
-    display: block
-    font-size: 14px
-    color: $color-darc-gray
-    letter-spacing: 0.03em
-    line-height: 28px
-
-
-.drop__a:hover 
-    color: $color-site-watermelon
-
-
-.drop_center 
-    right: -300%
-
-
-.drop_last 
-    right: 0
-
-
-
-.drop__a_img 
-    padding-top: 20px
-    margin-left: -25px
-
-
-.upperMenu .menu__list_a 
     border-bottom: 1px solid $color-white
-
-
-.upperMenu .menu__list_a:hover 
-    border-bottom: 1px solid $color-site-watermelon
-    color: $color-site-watermelon
-
-
+    &>ul 
+        list-style: none
 //  /* =================================================== */
 //  /* new arrivals(crumbs) */
 .newArrivals 
     height: 148px
     background-color: rgba(248, 243, 244, 1)
-
-
-.newArrivals__block 
-    display: flex
-    justify-content: space-between
-    height: 100%
-    align-items: center
-
-
-.newArrivals_h2 
-    font-size: 24px
-    font-weight: 900
-    color: $color-site-watermelon
-    text-align: center
-    line-height: 20px
-    text-transform: uppercase
-
-
-.scrumbs_h3 
-    display: flex
-
-
-.scrumbs_h3>li 
-    list-style-type: none
-
-
-.scrumbs_h3>li a 
-    font-size: 18px
-    font-weight: 300
-    color: $color-darc-gray
-    line-height: 20px
-    text-transform: uppercase
-
-
-.scrumbs_h3>li a:hover 
-    color: black
-
-
-.newArrivals_style 
-    text-transform: uppercase
-    color: $color-site-watermelon
-
-
+    &__block 
+        display: flex
+        justify-content: space-between
+        height: 100%
+        align-items: center
+    &_h2 
+        font-size: 24px
+        font-weight: 900
+        color: $color-site-watermelon
+        text-align: center
+        line-height: 20px
+        text-transform: uppercase
+    &_style 
+        text-transform: uppercase
+        color: $color-site-watermelon
+.scrumbs   
+    &_h3 
+        display: flex
+    &_h3>li 
+        list-style-type: none
+    &_h3>li a 
+        font-size: 18px
+        font-weight: 300
+        color: $color-darc-gray
+        line-height: 20px
+        text-transform: uppercase
+    &_h3>li a:hover 
+        color: $color-site-watermelon
 //  /* ====================================================== */
 //  /* subscribe block */
 .subscribe 
@@ -396,65 +306,54 @@ a
     url(img/subscribe_back.png) no-repeat center
     display: flex
     align-items: center
+    &__content 
+        width: 1048px
+        height: 171px
+        display: flex
+        justify-content: space-between
+    &__comment 
+        display: flex
+        justify-content: space-between
+        width: 536px
+    &_photo 
+        width: 83px
+        height: 83px
+        background-image: url(img/comment_photo.png)
+    &_email_form 
+        width: 386px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        text-align: center
 
-
-.subscribe__content 
-    width: 1048px
-    height: 171px
-    display: flex
-    justify-content: space-between
-
-
-.subscribe__comment 
-    display: flex
-    justify-content: space-between
-    width: 536px
-
-
-.subscribe_photo 
-    width: 83px
-    height: 83px
-    background-image: url(img/comment_photo.png)
-
-
-.comment_block 
-    display: flex
-    flex-direction: column
-    width: 425px
-
-
-.comment__btn__block 
-    width: 140px
-    display: flex
-    justify-content: space-between
-    padding-top: 30px
-
-
-.comment__btn__previous 
-    height: 4px
-    width: 38px
-    background-color: $color-white
-
-
-.comment__btn__current 
-    height: 4px
-    width: 38px
-    background-color: $color-site-watermelon
-
-
-.comment__btn__next 
-    height: 4px
-    width: 38px
-    background-color: $color-white
-
-
-.comment_text_h4 
-    font-size: 16px
-    font-style: italic
-    color: $color-darc-jungle-green
-    letter-spacing: 0.03em
-    line-height: 26px
-
+.comment   
+    &_block 
+        display: flex
+        flex-direction: column
+        width: 425px
+    &__btn__block 
+        width: 140px
+        display: flex
+        justify-content: space-between
+        padding-top: 30px
+    &__btn__previous 
+        height: 4px
+        width: 38px
+        background-color: $color-white
+    &__btn__current 
+        height: 4px
+        width: 38px
+        background-color: $color-site-watermelon
+    &__btn__next 
+        height: 4px
+        width: 38px
+        background-color: $color-white
+    &_text_h4 
+        font-size: 16px
+        font-style: italic
+        color: $color-darc-jungle-green
+        letter-spacing: 0.03em
+        line-height: 26px
 
 .text_author 
     font-size: 16px
@@ -464,7 +363,6 @@ a
     line-height: 16px
     padding-top: 15px
 
-
 .comment_author_address 
     font-size: 12px
     font-weight: 300
@@ -472,36 +370,23 @@ a
     letter-spacing: 0.03em
     line-height: 14px
 
-
-.subscribe_email_form 
-    width: 386px
-    display: flex
-    flex-direction: column
-    justify-content: center
-    text-align: center
-
-
-.form__send 
-    display: flex
-
-
-.form_name 
-    font-size: 24px
-    color: $color-darc-jungle-green
-    text-align: center
-    letter-spacing: 0.03em
-    line-height: 44px
-    text-transform: uppercase
-
-
-.form_description 
-    font-size: 14px
-    color: $color-darc-jungle-green
-    text-align: center
-    letter-spacing: 0.03em
-    line-height: 24px
-    padding-bottom: 30px
-
+.form
+    &__send 
+        display: flex
+    &_name 
+        font-size: 24px
+        color: $color-darc-jungle-green
+        text-align: center
+        letter-spacing: 0.03em
+        line-height: 44px
+        text-transform: uppercase
+    &_description 
+        font-size: 14px
+        color: $color-darc-jungle-green
+        text-align: center
+        letter-spacing: 0.03em
+        line-height: 24px
+        padding-bottom: 30px
 
 .email__form 
     border-radius: 23px
@@ -520,7 +405,6 @@ a
     letter-spacing: 0.03em
     line-height: 54px
 
-
 .send__email__button 
     height: 46px
     width: 104px
@@ -532,8 +416,6 @@ a
     text-align: center
     letter-spacing: 0.03em
     line-height: 44px
-
-
 //  /* ===================================================== */
 //  /* Lower menu block */
 //  /* Нижнее меню над футером */
@@ -541,72 +423,55 @@ a
     display: flex
     justify-content: space-between
     padding-top: 109px
-
-
-.lowerMenu__brand_block 
-    width: 430px
-    display: flex
-    flex-direction: column
-
-
-.lowerMenu__brand_logo 
-    display: flex
-
-
-.lowerMenu__brand_name 
-    font-family: "Lato"
-    font-size: 27px
-    font-weight: 300
-    color: $color-darc-jungle-green
-    text-align: center
-    letter-spacing: 0.03em
-    line-height: 32px
-    text-transform: uppercase
-    display: flex
-    align-items: center
-    padding-left: 13px
-
+    &__brand_block 
+        width: 430px
+        display: flex
+        flex-direction: column
+    &__brand_logo 
+        display: flex
+    &__brand_name 
+        font-family: "Lato"
+        font-size: 27px
+        font-weight: 300
+        color: $color-darc-jungle-green
+        text-align: center
+        letter-spacing: 0.03em
+        line-height: 32px
+        text-transform: uppercase
+        display: flex
+        align-items: center
+        padding-left: 13px
+    &__brand_text 
+        font-size: 14px
+        font-weight: 300
+        color: $color-darc-gray
+        text-align: right
+        letter-spacing: 0.03em
+        line-height: 24px
+        text-align: start
+        padding-top: 29px
+    &__name 
+        font-size: 18px
+        padding: 15px 0px 30px 0px
+        font-weight: bold
+        color: $color-site-watermelon
+        letter-spacing: 0.03em
+        line-height: 26px
+        text-transform: uppercase
+    &__list a 
+        display: flex
+        flex-direction: column
+        list-style-type: none
+        line-height: 42px
+        font-size: 16px
+        color: $color-darc-gray
+        letter-spacing: 0.03em
+    &__list a:hover 
+        color: $color-site-watermelon
 
 .letter_D_style 
     color: $color-site-watermelon
     font-weight: 900
-
-
-.lowerMenu__brand_text 
-    font-size: 14px
-    font-weight: 300
-    color: $color-darc-gray
-    text-align: right
-    letter-spacing: 0.03em
-    line-height: 24px
-    text-align: start
-    padding-top: 29px
-
-
-.lowerMenu__name 
-    font-size: 18px
-    padding: 15px 0px 30px 0px
-    font-weight: bold
-    color: $color-site-watermelon
-    letter-spacing: 0.03em
-    line-height: 26px
-    text-transform: uppercase
-
-
-.lowerMenu__list a 
-    display: flex
-    flex-direction: column
-    list-style-type: none
-    line-height: 42px
-    font-size: 16px
-    color: $color-darc-gray
-    letter-spacing: 0.03em
-
-
-.lowerMenu__list a:hover 
-    color: $color-site-watermelon
-
-
 //  /* ====================================================== */
 //  /* Footer */
 .footer 
@@ -616,41 +481,28 @@ a
     justify-content: space-between
     align-items: center
     margin-top: 97px
-
-
-.footer__copyright 
-    font-size: 16px
-    color: $color-platinum
-
-    letter-spacing: 0.03em
-    line-height: 42px
-
-
-.footer__socialBlock 
-    width: 191px
-    display: flex
-    justify-content: space-between
-
-
-
-.footer__socialBlock_imgBox 
-    width: 32px
-    height: 32px
-    background-color: white
-    display: flex
-    justify-content: center
-    align-items: center
-    border-radius: 3px
-    box-shadow: 0px 0px 10px 0px gray
-
-
-.footer__socialBlock_imgBox:hover 
-    background-color: $color-site-watermelon
-    border-radius: 16px
-    box-shadow: 0px 0px 10px 0px $color-site-watermelon
-  
-
-
+    &__copyright 
+        font-size: 16px
+        color: $color-platinum
+        letter-spacing: 0.03em
+        line-height: 42px
+    &__socialBlock 
+        width: 191px
+        display: flex
+        justify-content: space-between
+    &__socialBlock_imgBox 
+        width: 32px
+        height: 32px
+        background-color: white
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 3px
+        box-shadow: 0px 0px 10px 0px gray
+    &__socialBlock_imgBox:hover 
+        background-color: $color-site-watermelon
+        border-radius: 16px
+        box-shadow: 0px 0px 10px 0px $color-site-watermelon
 //  /* ========================================================== */
 //  /* pagination */
 .pagination 
@@ -658,51 +510,38 @@ a
     width: 845px
     display: flex
     justify-content: space-between
-
-
-.pagination-flickr 
-    width: 300px
-    display: flex
-    justify-content: space-around
-    align-items: center
-    border: solid 1px $color-platinum
-    border-radius: 3px
-
-
-.pagination-flickr li 
-    list-style-type: none
-
-
-.pagination-flickr a 
-    font-size: 16px
-    font-weight: 300
-    color: $color-platinum
-    line-height: 26px
-    list-style-type: none
-
-
-.pagination-flickr a:hover 
-    color: $color-site-watermelon
-
-
-.pagination-flickr .next,
-.pagination-flickr .active 
-    color: $color-site-watermelon
+    &-flickr 
+        width: 300px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border: solid 1px $color-platinum
+        border-radius: 3px
+    &-flickr li 
+        list-style-type: none
+    &-flickr a 
+        font-size: 16px
+        font-weight: 300
+        color: $color-platinum
+        line-height: 26px
+        list-style-type: none
+    &-flickr a:hover 
+        color: $color-site-watermelon
+    &-flickr .next,
+    &-flickr .active 
+        color: $color-site-watermelon
 
 @keyframes rotate-diagonal-br 
     0% 
         transform: rotate3d(-1, 1, 0, 0deg)
         transform-origin: 100% 100%
-  
     50% 
         transform: rotate3d(-1, 1, 0, -180deg)
         transform-origin: 100% 100%
-  
     100% 
         transform: rotate3d(-1, 1, 0, -360deg)
         transform-origin: 100% 100%
   
-
 
 .viewAll_btn 
     width: 150px
@@ -713,14 +552,6 @@ a
     font-weight: 300
     color: $color-site-watermelon
     line-height: 40px
-    
-    
-
-// .viewAll_btn:hover 
-//     color: white
-//     border: 1px solid gainsboro
-//     background-color: $color-site-watermelon
-//     border-radius: 3px
     
 .viewAll_btn:hover
     animation: rotate-diagonal-br 0.4s linear both
@@ -736,62 +567,40 @@ a
     margin-bottom: 39px
     position: relative
     transition: transform 1s
-
-
-.product:hover 
-    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
-    transform: scale(1.1)
-
-
-.product__content 
-    padding: 16px
-
-
-.product:hover .product__img 
-    filter: brightness(40%)
-
-
-.product:hover .product__add 
-    display: flex
-
-
-.product__add:hover 
-    box-shadow: 0 0 6px $color-white
-
-// GOTO
-// .product__add:active .product
-//     transform: translate(1000px, -300px) scale(0.2)
-
-
-.product__img 
-    width: 100%
-
-
-.product__name 
-    font-size: 13px
-    color: $color-darc-jungle-green
-    text-transform: uppercase
-
-
-.product__price 
-    font-size: 16px
-    font-weight: bold
-    color: $color-site-watermelon
-    text-transform: uppercase
-    margin-top: 16px
-
-
-.product__add 
-    font-size: 13px
-    font-weight: bold
-    color: $color-white
-    position: absolute
-    height: 39px
-    width: 123px
-    border: 1px solid $color-white
-    display: none
-    align-items: center
-    justify-content: center
-    position: absolute
-    top: 97px
-    left: 70px
+    &:hover 
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+        transform: scale(1.1)
+    &__content 
+        padding: 16px
+    &:hover .product__img 
+        filter: brightness(40%)
+    &:hover .product__add 
+        display: flex
+    &__add:hover 
+        box-shadow: 0 0 6px $color-white
+    &__img 
+        width: 100%
+    &__name 
+        font-size: 13px
+        color: $color-darc-jungle-green
+        text-transform: uppercase
+    &__price 
+        font-size: 16px
+        font-weight: bold
+        color: $color-site-watermelon
+        text-transform: uppercase
+        margin-top: 16px
+    &__add 
+        font-size: 13px
+        font-weight: bold
+        color: $color-white
+        position: absolute
+        height: 39px
+        width: 123px
+        border: 1px solid $color-white
+        display: none
+        align-items: center
+        justify-content: center
+        position: absolute
+        top: 97px
+        left: 70px

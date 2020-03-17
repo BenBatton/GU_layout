@@ -319,6 +319,11 @@
   border: 1px solid #ef5b70;
 }
 
+.addToCart_btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .addToCart_text {
   padding-left: 15px;
   font-size: 16px;
